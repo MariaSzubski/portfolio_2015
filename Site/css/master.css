@@ -1,0 +1,256 @@
+/*    TABLE OF CONTENTS
+
+		Global Styles
+		Intro
+		Work Samples
+		About Me
+		Experience
+		Involvement
+		Contact
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300,400);
+
+
+/*                                     Global Styles  */
+
+*{
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	margin:0px;
+	padding:0px;
+}
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+ul{
+	list-style-type: none;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: middle;
+	box-sizing: border-box;
+}
+
+nav li{
+	padding: 18px;
+}
+
+nav{
+	background-color: #eee;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+}
+
+h1{
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 36px;
+}
+section{
+	padding-bottom: 36px;
+}
+
+/*                                     Intro  */
+
+
+#intro{
+	display:flex;
+	flex-flow: column;
+	align-items: center;
+	padding-top: 96px;
+	padding-bottom: 36px;
+}
+
+
+#intro>img{
+	width:288px;
+	height:288px;
+	border-radius: 144px;
+}
+
+#intro h1{
+	font-size: 2em;
+	text-transform: none;
+	font-weight: 500;
+	padding: 18px 0 0 0;
+}
+
+#intro p{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.5em;
+}
+
+#social li{
+	margin: 18px 6px;
+}
+
+#social img{
+	height: 36px;
+	width: 36px;
+}
+
+
+/*                                     Work Samples  */
+
+#workSamples{
+	background-color: #eee;
+	padding: 0 24px 36px 24px;
+	position:relative;
+}
+
+
+
+.topRow, .bottomRow{
+	display: flex;
+	flex-flow: row wrap;
+	margin:auto;
+}
+
+#topColumn{
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	min-height: 100%;
+}
+
+
+
+.topRow>:first-child{
+	height:570px;
+	flex: 2;
+}
+
+.topRow>:last-child{
+	flex:1;
+}
+
+#topColumn>:first-child{
+	height: 382px;
+}
+
+#topColumn>:last-child{
+	height: 180px;
+}
+
+.bottomRow .caseStudy{
+		flex: 1;
+		min-width: 32%;
+		height: 316px;
+}
+
+.caseStudy{
+	background-color: #ddd;
+	margin: 4px;
+	position: relative;
+}
+
+.caseStudy img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+.label{
+	height: 100px;
+	width: 100%;
+	background-color: rgba(255,255,255,.3);
+	z-index: 2;
+	display: flex;
+	flex-flow: column;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	bottom:0px;
+}
+
+.label p:first-child{
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+
+/*                                     Experience */
+
+#experience{
+	padding: 0px 20% 36px 20%;
+	background-color: #eee;
+}
+
+#expContainer{
+	display:flex;
+	flex-flow: column;
+}
+
+#expContainer  article{
+	display:flex;
+	flex-flow: row;
+	align-items: center;
+	margin-top: 24px;
+	margin-bottom: 24px;
+
+}
+
+#expContainer h5  {
+	min-width: 100px;
+	min-height:100px;
+	max-width: 100px;
+	max-height:100px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 24px;
+	margin-right: 24px;
+	box-sizing: border-box;
+	background-color: #ddd;
+	border-radius: 50px;
+}
+
+#expContainer h2	{ font-size: 1.5em; font-weight: 500; }
+#expContainer h3  { font-size: 1.25em;  margin-top: 6px; }
+#expContainer h4	{ font-family: 'Roboto Slab', serif; font-size: 1em; margin-top: 6px;}
+#expContainer img { width: 16px; height: 16px; margin: 0px 6px 0px 18px; }
+#expContainer .location  { font-size: .583em; font-weight: 300; }
+#expContainer a  	{ text-transform: none; font-weight: inherit; }
+
+
+/*                                     Involvement */
+
+#invContainer{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 36px;
+}
+
+#invContainer article{
+	flex: 1;
+	background-color: #333;
+	color:#fff;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 36px;
+	margin: 3px;
+}
+
+#invContainer .topRow article:first-of-type{
+	flex: 2;
+	height: 316px;
+}
+#invContainer .topRow article:last-of-type{
+	flex: 1;
+	height: 316px;
+}
+
+#invContainer h2		{ font-size: 1.5em; font-weight: 400;}
+#invContainer h3, h4	{ font-size: 1.25em; font-weight: 300; margin-top: 6px;}
+#invContainer p		{ font-family: 'Roboto Slab', serif; font-size: 0.875em; font-weight: 300; margin-top: 6px;line-height: 1.5em;}
+#invContainer img		{ width: 24px; height: 24px; margin-top: 12px; margin-bottom: 12px;}
