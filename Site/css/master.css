@@ -235,38 +235,83 @@ section{
 /*                                     Involvement */
 #involveRec{
 		border-top: 4px solid #333;
+		background: url('../img/bg.png');
 }
 
 #invContainer{
-	display: flex;
-	flex-flow: row wrap;
-	padding: 36px;
+		display:inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0px 36px;
+		font-size: .8em;
 }
 
 #invContainer article{
-	flex: 1;
-	background-color: #333;
-	color:#fff;
-	text-align: center;
 	box-sizing: border-box;
-	padding: 36px;
-	margin: 3px;
+	display: flex;
+	flex-flow: column;
+	width: 24%;
+	min-width: 336px;
+	height: 156px;
+	background-color: #fff;
+	color:#000;
+	border: 1px solid #999;
+	border-top: 2px solid #000;
+	padding: 24px;
+	padding-left: 54px;
+	margin: 4px;
+	position: relative;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 
-#invContainer .topRow article:first-of-type{
-	flex: 2;
-	height: 316px;
-}
-#invContainer .topRow article:last-of-type{
-	flex: 1;
-	height: 316px;
+
+#invContainer h2 {
+	font-size: 1.5em;
+	font-weight: 400;
 }
 
-#invContainer h2		{ font-size: 1.5em; font-weight: 400;}
-#invContainer h3, h4	{ font-size: 1.25em; font-weight: 300; margin-top: 6px;}
-#invContainer p		{ font-family: 'Roboto Slab', serif; font-size: 0.875em; font-weight: 300; margin-top: 6px;line-height: 1.5em;}
-#invContainer img		{ width: 24px; height: 24px; margin-top: 12px; margin-bottom: 12px;}
+#invContainer h3, h4	{
+	font-size: 1.25em;
+	font-weight: 300;
+	margin-top: 6px;
+}
 
+#invContainer p {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.01875em;
+	font-weight: 300;
+	margin-left:-30px;
+}
+
+.layer1 img	{
+	position:absolute;
+	top: 26px;
+	left: 24px;
+}
+
+#invContainer img:first-child	{
+	position:absolute;
+	bottom: 12px;
+	right: 12px;
+}
+
+.layer2{
+	visibility: hidden;
+	height: 0px;
+}
+
+#invContainer article:hover .layer1{
+	visibility: hidden;
+	transition: display 1s;
+	height:0px;
+}
+
+
+#invContainer article:hover .layer2{
+	visibility: visible;
+	height: auto;
+	transition: visibility 1s;
+}
 
 /*                                     Footer */
 
