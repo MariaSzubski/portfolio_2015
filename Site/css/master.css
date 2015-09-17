@@ -8,6 +8,11 @@
 		Involvement
 		Contact
 
+
+		COLORS
+		Yellow:	 	#E3A730
+		Dark Gray: 	#362B3C
+
 */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:300,400|Roboto+Condensed:300,400,500,700);
@@ -50,12 +55,14 @@ nav{
 }
 
 h1{
-	font-size: 3.2em;
+	font-size: 3.5em;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: 300;
+	color:#E3A730;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 36px;
+	text-shadow: 2px 2px 1px #362B3C;
 }
 section{
 	padding-bottom: 36px;
@@ -80,7 +87,7 @@ section{
 	width:288px;
 	height:288px;
 	border-radius: 144px;
-
+	border: 8px solid #ffffff;
 }
 
 #intro h1{
@@ -98,22 +105,29 @@ section{
 }
 
 #social li{
-	margin: 18px 6px;
+	margin: 18px 8px;
+	height: 51px;
+	width: 48px;
+	overflow: hidden;
 }
 
 #social img{
-	height: 36px;
-	width: 36px;
+	height: 102px;
+	width: 48px;
+}
+
+#social li:hover > img{
+	margin-top:-51px;
+	cursor: pointer;
 }
 
 
 /*                                     Work Samples  */
 
 #workSamples{
-
-	padding: 0 24px 36px 24px;
+	padding: 0 36px 36px 36px;
 	position:relative;
-	border-top: 4px solid #333;
+	border-top: 4px solid #362B3C;
 }
 
 .topRow, .bottomRow{
@@ -129,9 +143,19 @@ section{
 	min-height: 100%;
 }
 
+#workSamples img{
+	object-fit: cover;
+	object-position: top;
+	//border: 2px solid #362B3C;
+	box-sizing: border-box;
+	//box-shadow: 0px 0px 4px #362B3C;
+	//padding: 6px;
+}
+
 .topRow>:first-child{
 	height:570px;
 	flex: 2;
+	overflow: hidden;
 }
 
 .topRow>:last-child{
@@ -153,9 +177,12 @@ section{
 }
 
 .caseStudy{
-	background-color: #ddd;
-	margin: 4px;
+	background-color: #fff;
+	margin: 6px;
 	position: relative;
+	box-sizing: border-box;
+	//border: 1px solid #362B3C;
+	box-shadow: 0px 0px 8px #362B3C;
 }
 
 .caseStudy img{
@@ -188,8 +215,8 @@ section{
 
 #experience{
 	padding: 0px 20% 72px 20%;
-	background-color: #eee;
-	border-top: 4px solid #333;
+	background-color: #75685E;
+	border-top: 4px solid #362B3C;
 }
 
 #expContainer{
@@ -197,7 +224,7 @@ section{
 	flex-flow: column;
 }
 
-#expContainer  article{
+#expContainer article{
 	display:flex;
 	flex-flow: row;
 	align-items: center;
@@ -234,7 +261,7 @@ section{
 
 /*                                     Involvement */
 #involveRec{
-		border-top: 4px solid #333;
+		border-top: 4px solid #362B3C;
 		background: url('../img/bg.png');
 }
 
@@ -252,13 +279,13 @@ section{
 	flex-flow: column;
 	width: 24%;
 	min-width: 336px;
-	height: 156px;
+	height: 168px;
 	background-color: #fff;
-	color:#000;
+	color:#362B3C;
 	border: 1px solid #999;
-	border-top: 2px solid #000;
-	padding: 24px;
-	padding-left: 54px;
+	border-top: 2px solid #362B3C;
+	padding: 30px;
+	padding-left: 60px;
 	margin: 4px;
 	position: relative;
 	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
@@ -277,16 +304,17 @@ section{
 }
 
 #invContainer p {
-	font-family: 'Roboto Slab', serif;
-	font-size: 1.01875em;
+	font-family: 'Roboto', serif;
+	font-size: 1.2em;
 	font-weight: 300;
+	line-height: 1.4em;
 	margin-left:-30px;
 }
 
 .layer1 img	{
 	position:absolute;
-	top: 26px;
-	left: 24px;
+	top: 32px;
+	left: 30px;
 }
 
 #invContainer img:first-child	{
@@ -298,6 +326,10 @@ section{
 .layer2{
 	visibility: hidden;
 	height: 0px;
+}
+
+#invContainer article:hover {
+	cursor:help;
 }
 
 #invContainer article:hover .layer1{
@@ -317,8 +349,8 @@ section{
 
 #contact{
 	padding: 0px 36px 36px 36px;
-	background-color: #eee;
-		border-top: 4px solid #333;
+	background-color: #75685E;
+		border-top: 4px solid #362B3C;
 }
 
 
@@ -364,15 +396,21 @@ section{
 #socialFooter li{
 	display: flex;
 	align-items: center;
+	height: 51px;
+	width: 48px;
 }
 
 #socialFooter li img{
 	margin: 12px 12px;
-	width: 36px;
-	height: 36px;
+	width: 48px;
+	height: 102px;
+}
+
+#socialFooter li:hover > img{
+	margin-top: 51px;
 }
 
 
 #twitter a{
-	background-color: #eee;
+	background-color: #75685E;
 }
