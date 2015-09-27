@@ -1,17 +1,28 @@
-/*    TABLE OF CONTENTS
+/*
 
+	TABLE OF CONTENTS
 		Global Styles
 		Intro
 		Work Samples
-		About Me
 		Experience
+		About Me
 		Involvement
 		Contact
 
 
-		COLORS
+	COLORS
 		Yellow:	 	#E3A730
 		Dark Gray: 	#362B3C
+		Dark Brown: #75685E
+		BG Lines:	url('../img/bg.png')
+		Box Shadow: 0px 0px 5px rgba(0,0,0,.5)
+
+
+	MEDIA QUERY BREAK POINTS
+		(max-width: 768px)
+		(min-width: 769px) and (max-width: 1024px)
+		(min-width: 1025px) and (max-width: 1680px)
+		(min-width: 1681px)
 
 */
 
@@ -32,29 +43,36 @@ ul{
 }
 
 nav li{
-	padding: 18px;
+	padding: 12px 0px;
+}
+
+nav a{
+	padding: 12px 18px;
+}
+
+nav li:hover{
+	background-color: rgb(251, 232, 177);
 }
 
 nav{
 	background-color: #fff;
-	background-image: url(../img/bg.png);
+	//background-image: url(../img/bg.png);
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
-
+	//border-bottom: 4px solid #362B3C;
+	box-shadow: 0px 0px 7px rgba(0,0,0,.5);
 }
 
-#intro button{
+header > a, form input[type="submit"]{
 	background-color: white;
 	border: 2px solid #362B3C;
-	color: #362B3C;
 	padding: 12px 32px;
-	font-size: 1.25em;
 	border-radius: 5px;
 	cursor: pointer;
 }
 
-#intro button:hover{
+header > a:hover, form input[type="submit"]:hover{
 	border-color: #E3A730;
 }
 
@@ -66,7 +84,7 @@ section{
 /*                                     Intro  */
 
 
-#intro{
+header{
 	display:flex;
 	flex-flow: column;
 	align-items: center;
@@ -74,11 +92,10 @@ section{
 	padding-bottom: 72px;
 	//background-color: rgba(54, 43, 60, 0.1);
 	background-image: url('../img/bg.png');
-	min-height:700px;
 }
 
 
-#intro > img{
+header > img{
 	width:288px;
 	height:288px;
 	border-radius: 144px;
@@ -108,7 +125,7 @@ section{
 /*                                     Work Samples  */
 
 #workSamples{
-	padding: 0 72px 36px 72px;
+	padding: 0px 66px 66px 66px;
 	position:relative;
 	border-top: 4px solid #362B3C;
 	background-color: #75685E;
@@ -116,18 +133,13 @@ section{
 	background-repeat: repeat;
 }
 
-.topRow, .bottomRow{
+#wsContainer{
 	display: flex;
 	flex-flow: row wrap;
 	margin:auto;
 }
 
-#topColumn{
-	flex: 1;
-	display: flex;
-	flex-flow: column;
-	min-height: 100%;
-}
+
 
 #workSamples img{
 	object-fit: cover;
@@ -137,29 +149,143 @@ section{
 	//padding: 6px;
 }
 
-.topRow>:first-child{
-	height:434px;
-	flex: 1.97;
-	overflow: hidden;
-}
 
-.topRow>:last-child{
-	flex:1;
-}
+@media (max-width: 768px) {
+	#workSamples{
+		padding: 0 24px 36px 24px;
+	}
 
-#topColumn>:first-child{
-	height: 240px;
-}
+	#workSamples img{
+		object-fit: cover;
+		object-position: center;
+	}
 
-#topColumn>:last-child{
-	height: 182px;
-}
+	#csGroup_1, #csGroup_2{
+		flex:1;
+		flex-basis: 100%;
+		display: flex;
+		flex-flow: column;
+	}
 
-.bottomRow .caseStudy{
+	#cs_1, #cs_2, #cs_3, #cs_4, #cs_5, #cs_6, #cs_7, #cs_8, #cs_9 {
 		flex: 1;
-		min-width: 31%;
-		height: 240px;
+		flex-basis: 100%;
+		height: 210px;
+	}
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	#csGroup_1, #csGroup_2{
+		flex:2;
+		flex-basis: 100%;
+		display: flex;
+		flex-flow: row wrap;
+
+	}
+
+	#cs_1{
+		height:315px;
+		flex: 2;
+		overflow: hidden;
+		flex-basis: 100%;
+	}
+
+	#cs_2, #cs_3, #cs_4, #cs_5{
+		flex: 1;
+		flex-basis: 30%;
+		height: 210px;
+	}
+
+	#cs_6, #cs_7, #cs_8, #cs_9 {
+		flex: 1;
+		flex-basis: 32%;
+		height: 210px;
+	}
+
+}
+
+@media (min-width: 1025px) and (max-width: 1680px) {
+	#csGroup_1{
+		flex:1;
+		flex-basis: 32%;
+		display: flex;
+		flex-flow: column;
+		min-height: 100%;
+	}
+
+	#csGroup_2{
+		flex:2;
+		display: flex;
+		flex-flow: row wrap;
+		flex-basis: 66%;
+	}
+
+	#cs_1{
+		height: 444px;
+		flex: 2;
+		overflow: hidden;
+		flex-basis: 63.25%;
+	}
+
+	#cs_2{
+		height: 264px;
+	}
+
+	#cs_3{
+		height: 164px;
+	}
+
+	#cs_4, #cs_5{
+		flex: 1;
+		flex-basis: 30%;
+		height: 264px;
+	}
+
+	#cs_6, #cs_7, #cs_8, #cs_9 {
+		flex: 1;
+		flex-basis: 32%;
+		height: 264px;
+	}
+}
+
+
+
+@media (min-width: 1681px) {
+	#csGroup_1, #csGroup_2{
+		flex: 1;
+		display: flex;
+		flex-flow: column;
+		flex-basis: 20%;
+	}
+
+	#cs_1{
+   	height:516px;
+   	flex: 2;
+   	overflow: hidden;
+   	flex-basis: 40%;
+   }
+
+
+   #cs_2{
+   	height: 252px;
+		flex:1;
+   	flex-basis: 20%;
+   }
+
+   #cs_3{
+   	height: 252px;
+		flex:1;
+   	flex-basis: 20%;
+   }
+
+   #cs_4, #cs_5, #cs_6, #cs_7, #cs_8, #cs_9 {
+   	flex: 1;
+   	flex-basis: 20%;
+   	height: 252px;
+   }
+ }
 
 .caseStudy{
 	background-color: #fff;
@@ -200,39 +326,95 @@ section{
 /*                                     Experience */
 
 #experience{
-	padding: 0px 20% 72px 20%;
-	//background-color: #75685E;
+	padding: 0px 72px 72px 72px;
+	background-color: rgba(117, 104, 94, 0.15);
 	border-top: 4px solid #362B3C;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../img/bg.png')
 }
 
 #expContainer{
 	display:flex;
 	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 960px;
 }
 
 #expContainer article{
+	box-sizing: border-box;
+	position: relative;
 	display:flex;
 	flex-flow: row;
 	align-items: center;
-	margin-top: 12px;
-	margin-bottom: 12px;
+	justify-content: flex-end;
 
+	width: 100%;
+	height: auto;
+	margin: 4px;
+	padding: 18px 30px;
+	background-color: #fff;
+	border: 1px solid #999;
+	//border-top: 2px solid #362B3C;
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 
-#expContainer img {
-	margin: 10px 6px 0px 0px;
+#expContainer article div:first-child{
+	flex:4;
+	padding: 18px 30px 18px 0px;
+	border-right: 1px solid #eaeaea;
 }
 
-.divider{
-	display: block;
-	width: 800px;
-	height: 1px;
-	margin: 10px 0px 12px 0px;
-	background-color: rgba(0, 0, 0, 0.15);
+#expContainer article div:last-child{
+	flex: 1;
+	padding-left: 30px;
+	min-width: 144px;
+	display:flex;
+	flex-flow: column;
+	align-items: center;
 }
 
+
+@media (max-width: 768px) {
+
+	#expContainer article{
+		display:flex;
+		flex-flow: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+
+	}
+
+	#expContainer article div:first-child{
+		padding: 18px 0px;
+		border-right: 0px;
+	}
+
+	#expContainer article div:last-child{
+		padding-left: 0px;
+		display:flex;
+		text-align: left;
+		flex-flow: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	h6{
+		margin-top: 		6px;
+	}
+}
+
+/*                                     About Me */
+#aboutMe{
+	border-top: 4px solid #362B3C;
+	background-color: #362B3C;
+}
 
 /*                                     Involvement */
+
 #involveRec{
 		border-top: 4px solid #362B3C;
 		//background-color: #362B3C;
@@ -257,9 +439,7 @@ section{
 	margin: 4px;
 	padding: 30px;
 	padding-left: 60px;
-
 	background-color: #fff;
-
 	border: 1px solid #999;
 	border-top: 2px solid #362B3C;
 	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
@@ -309,10 +489,11 @@ section{
 
 /*                                     Footer */
 
-#contact{
+footer{
 	padding: 0px 36px 36px 36px;
 	background-color: #75685E;
 	border-top: 4px solid #362B3C;
+
 }
 
 
@@ -320,24 +501,28 @@ section{
 	display: flex;
 }
 
-#form{
+form{
 	flex: 1;
 	display: flex;
 	flex-flow: column;
 	padding-right: 12px;
 }
 
-#form input, #form textarea{
+form input, form textarea{
 	height:48px;
 	box-sizing: border-box;
 	margin-bottom: 6px;
 	padding: 0px 12px;
+
+
+
+
+		border: 0px solid #362B3C;
+		border-radius: 5px;
 }
 
-#form textarea{
+form textarea{
 	height: 144px;
-	box-sizing: border-box;
-	margin-bottom: 6px;
 	padding: 12px 12px;
 }
 

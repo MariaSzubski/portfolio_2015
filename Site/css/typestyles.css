@@ -1,20 +1,23 @@
 /*                                     Global
 
-Yellow:	 	#E3A730
-Dark Gray: 	#362B3C
-
+COLORS
+	Yellow:	 	#E3A730
+	Dark Gray: 	#362B3C
+	Dark Brown: #75685E
 
 */
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400|Roboto+Condensed:300,400,500,700);
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700|Roboto+Slab:300,400|Roboto+Condensed:300,400,700);
 
 *{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	color: #362B3C;
+	font-family: 		'Roboto', sans-serif;
+	font-weight: 		300;
+	color: 				#362B3C;
 }
 
 
-/*                                     h1 */
+/*                                     Headers */
 h1{
 	font-family: 		'Roboto Condensed', sans-serif;
 	font-weight: 		300;
@@ -26,113 +29,111 @@ h1{
 	padding: 			36px;
 }
 
-#intro h1{
+header h1{
 	font-family: 		'Roboto', sans-serif;
 	font-weight: 		400;
 	font-size: 			2em;
 	color:				#E3A730;
 	text-transform:	capitalize;
+	text-align: 		center;
 	text-shadow: 		1px 1px 1px #362b3C;
 	padding: 			18px 0px 0px 0px;
 }
 
-
-
-/*                                     h2 */
-
 h2{
-	font-size: 			1.5em;
+	font-size: 			1.375em;
 	font-weight: 		500;
 }
 
+#invContainer h2{
+	font-size: 			1.125em;
+}
 
-/*                                     h3 */
 h3{
-	font-size: 			1.375em;
+	font-size: 			1.25em;
 	font-weight: 		300;
-	margin-top: 		12px;
+	margin-top: 		6px;
+	//border-bottom: 1px solid #ccc;
+}
+
+h4, #invContainer h3{
+	font-family:		'Roboto', serif;
+	font-size: 			1em;
+	margin-top: 		6px;
+}
+
+h5{
+	font-family: 		'Roboto Condensed', serif;
+	font-size: 			1.25em;
+	text-align: 		center;
+}
+
+h6{
+	font-size: 			1em;
+	margin-top: 		6px;
+	display: 			flex;
+}
+
+h6 img{
+	height: 				18px;
+	width: 				18px;
+	margin-right: 		4px;
 }
 
 
-/*                                     h4 */
-#expContainer h4	{
-	font-size: 1em;
-	margin-top: 12px;
-}
-
-#invContainer h4	{
-	font-size: 1.375em;
-	font-weight: 300;
-	margin-top: 6px;
-}
-
-
-/*                                     h5 */
-
-#expContainer h5  {
-	min-width: 120px;
-	min-height:120px;
-	max-width: 120px;
-	max-height:120px;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	padding: 24px;
-	margin-right: 24px;
-	box-sizing: border-box;
-	border:4px solid #fff;
-	border-radius: 60px;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 1.125em;
-}
 
 
 /*                                     Copy */
-#intro p{
-	font-family: 'Roboto Slab', serif;
-	font-size: 1.5em;
+header p{
+	font-family: 		'Roboto Slab', serif;
+	font-size: 			1.5em;
+	text-align: 		center;
 }
 
 .label p:first-child{
-	font-weight: 500;
-	font-size: 1.2em;
+	font-family: 		'Roboto Condensed', serif;
+	font-weight: 		700;
+	font-size: 			1.2em;
 }
 
-#expContainer .location  {
-	font-size: .72em;
-	font-weight: 300;
+#aboutMe ul *{
+	color: #fff;
 }
-
-#invContainer{
-		font-size: .8em;
-}
-
 
 #invContainer p {
-	font-family: 'Roboto', serif;
-	font-size: 1.2em;
-	font-weight: 300;
-	line-height: 1.4em;
-	margin-left:-30px;
+	font-family: 		'Roboto', serif;
+	font-size: 			1em;
+	font-weight:		300;
+	line-height: 		1.4em;
+	margin-left:		-30px;
 }
 
-#form input, #form textarea{
-	font-family: 'Roboto Slab', serif;
-	font-size: 1em;
+form input, form textarea{
+	font-family:		'Roboto Slab', serif;
+	font-size:			1em;
 }
+
+
 
 /*                                     Links  */
 
 
 a{
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 500;
-	//color: #cca313;
+	text-decoration:	none;
+	text-transform:	uppercase;
+	font-weight: 		500;
+	//color: 			#cca313;
 }
 
 #expContainer a  	{
-	text-transform: none;
-	font-weight: inherit;
+	text-transform: 	none;
+	font-weight: 		inherit;
+}
+
+
+header a, form input[type="submit"]{
+	font-family: 'Roboto', sans-serif;
+	font-weight:		300;
+	text-transform:	capitalize;
+	font-size: 1.25em;
 }
