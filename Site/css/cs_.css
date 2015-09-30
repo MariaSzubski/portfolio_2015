@@ -71,7 +71,7 @@ header img{
 section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
-		padding: 0px 72px 72px 72px;
+		padding: 0px 144px 288px 144px;
 
 
 }
@@ -94,15 +94,15 @@ section{
 
 @media (max-width: 1024px) {
 	section{
-			box-sizing: border-box;
-			border-top: 4px solid #362B3C;
-			padding: 0px 24px 72px 24px;
-
-
+		box-sizing: border-box;
+		border-top: 4px solid #362B3C;
+		padding: 0px 24px 72px 24px;
 	}
+
 	#cs_about{
 		flex-flow: column;
 	}
+
 	#cs_about div{
 		flex: 1;
 		margin: 24px 0px;
@@ -114,6 +114,110 @@ section p{
 	font-size: 1.3em;
 	line-height: 1.4em;
 }
+
+
+
+/*                                    Research */
+#cs_research{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#cs_research h1{
+	flex-basis: 100%;
+}
+
+#cs_research img{
+	box-sizing: border-box;
+	display: block;
+	height: 288px;
+	object-fit: cover;
+	margin:6px;
+}
+img[src*="01"], img[src*="02"], img[src*="04"], img[src*="05"], img[src*="06"], img[src*="07"]{
+	flex: 1 ;
+}
+img[src*="03"]{
+	flex: 1 ;
+}
+
+
+/*                                    Design 1*/
+
+#cs_design1{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#cs_design1 h1{
+	flex-basis: 100%;
+}
+
+
+.slides{
+	max-width: 640px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.slides_container{
+	max-width: 640px;
+	height: 480px;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.slides_container img{
+	max-width: 640px;
+	height: 480px;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+#cs_design1 > div{
+	flex: 1;
+
+}
+
+#cs_design1 > div:first-of-type{
+	display: flex;
+	justify-content: center;
+}
+
+#cs_design1 p{
+	margin-top: 18px;
+	font-size: 1.4em;
+}
+
+
+/*                                    Design Testing */
+#cs_testing{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#cs_testing h1{
+	flex-basis: 100%;
+}
+
+#cs_testing div{
+	flex: 1;
+ 	height: 500px;
+}
+
+#cs_testing > div:last-of-type{
+	display: flex;
+	flex-flow: row wrap;
+
+	padding-left: 72px;
+}
+
+#cs_testing img{
+	height: 50%;
+	flex: 1 0 50%;
+	object-fit: contain;
+}
+
 
 
 /*                                    Prototype */
