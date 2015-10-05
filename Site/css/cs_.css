@@ -25,7 +25,9 @@
 
 */
 
-
+html, body{
+	height: 100%;
+}
 
 nav{
 	position: relative;
@@ -33,11 +35,14 @@ nav{
 /*                                    Header */
 header{
 	display: flex;
-	flex-flow: column;
+	flex-flow: column wrap;
 	position: relative;
 	justify-content: top;
 	width: 100%;
-	height: 200px;
+	height:50%;
+	background-color: #362B3C;
+
+
 }
 
 header div{
@@ -56,6 +61,7 @@ header h1{
 	color: #fff;
 	font-size:3em;
 	text-shadow: 2px 2px 2px #000;
+	padding: 0px 108px;
 }
 
 header img{
@@ -64,6 +70,8 @@ header img{
 	object-fit: cover;
 	object-position: center;
 	box-sizing: border-box;
+	height: 80%;
+	opacity: .3;
 }
 
 
@@ -71,23 +79,23 @@ header img{
 section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
-		padding: 0px 144px 288px 144px;
+		padding: 0px 108px 228px 108px;
 
 
 }
 
 /*                                    About */
-#cs_about{
+#detail_about{
 	box-sizing: border-box;
 	display: flex;
 	flex-flow: row wrap;
 }
 
-#cs_about h1{
+#detail_about h1{
 	flex-basis:100%;
 }
 
-#cs_about div{
+#detail_about div{
 	flex: 1;
 	margin: 0px 24px;
 }
@@ -96,14 +104,14 @@ section{
 	section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
-		padding: 0px 24px 72px 24px;
+		padding: 0px 36px 72px 36px;
 	}
 
-	#cs_about{
+	#detail_about{
 		flex-flow: column;
 	}
 
-	#cs_about div{
+	#detail_about div{
 		flex: 1;
 		margin: 24px 0px;
 	}
@@ -116,40 +124,45 @@ section p{
 }
 
 
-
-/*                                    Research */
-#cs_research{
+/*                                    Detail Section 01 */
+#detail_01 {
 	display: flex;
 	flex-flow: row wrap;
+	background-image: url('../img/bg.png');
 }
 
-#cs_research h1{
+#detail_01 h1{
 	flex-basis: 100%;
 }
 
-#cs_research img{
+#detail_01 img{
 	box-sizing: border-box;
 	display: block;
+
+	border: 2px solid #362B3C;
 	height: 288px;
 	object-fit: cover;
 	margin:6px;
+
 }
 img[src*="01"], img[src*="02"], img[src*="04"], img[src*="05"], img[src*="06"], img[src*="07"]{
-	flex: 1 ;
+	flex: 1 0 20%;
 }
 img[src*="03"]{
-	flex: 1 ;
+	flex: 2 0 30%;
 }
 
 
-/*                                    Design 1*/
 
-#cs_design1{
+
+/*                                    Detail Section 02 */
+
+#detail_02{
 	display: flex;
 	flex-flow: row wrap;
 }
 
-#cs_design1 h1{
+#detail_02 h1{
 	flex-basis: 100%;
 }
 
@@ -174,65 +187,102 @@ img[src*="03"]{
 	overflow: hidden;
 }
 
-#cs_design1 > div{
+#detail_02 > div{
 	flex: 1;
 
 }
 
-#cs_design1 > div:first-of-type{
+#detail_02 > div:first-of-type{
 	display: flex;
 	justify-content: center;
 }
 
-#cs_design1 p{
+#detail_02 p{
 	margin-top: 18px;
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 
 
-/*                                    Design Testing */
-#cs_testing{
+
+
+/*                                    Detail Section 03 */
+#detail_03{
 	display: flex;
 	flex-flow: row wrap;
 }
 
-#cs_testing h1{
+#detail_03 h1{
 	flex-basis: 100%;
 }
 
-#cs_testing div{
+#detail_03 div{
 	flex: 1;
  	height: 500px;
 }
 
-#cs_testing > div:last-of-type{
+#detail_03 > div:last-of-type{
 	display: flex;
 	flex-flow: row wrap;
 
 	padding-left: 72px;
 }
 
-#cs_testing img{
+#detail_03 img{
 	height: 50%;
-	flex: 1 0 50%;
+	flex: 1 0 40%;
+	border: 2px solid #362B3C;
 	object-fit: contain;
 }
 
+/*                                    Detail Section 04 */
+#detail_04{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#detail_04 h1{
+	flex-basis: 100%;
+}
 
 
-/*                                    Prototype */
-#prototype div{
+#detail_04 > div{
+	flex: 1;
+}
+
+#detail_04 > div:first-of-type{
 	display: flex;
 	justify-content: center;
 }
 
+#detail_04 p{
+	margin-top: 18px;
+	font-size: 1.3em;
+}
 
 
-#prototype div:last-of-type{
+
+
+/*                                    Detail Section 05 */
+
+#detail_05{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-position: center;
+}
+#detail_05 div{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+
+
+#detail_05 div:last-of-type{
 	margin-top: 48px;
 }
 
-#prototype div:last-of-type a{
+#detail_05 div:last-of-type a{
 	background-color: white;
 	border: 2px solid #362B3C;
 	padding: 12px 32px;
@@ -247,16 +297,80 @@ img[src*="03"]{
 	text-align: center;
 }
 
-#prototype div:last-of-type a:hover{
+#detail_05 div:last-of-type a:hover{
 		border-color: #E3A730;
 }
 
 @media (max-width: 1024px) {
-	#prototype div{
+	#detail_05 div{
 		flex-flow: column;
 	}
 
-	#prototype div:last-of-type a{
+	#detail_05 div:last-of-type a{
 		margin: 6px 0px;
 	}
+}
+
+
+#detail_05 img{
+	width:50%;
+}
+
+#detail_05 embed{
+	width: 100%;
+		height: 640px;
+}
+
+
+
+/*                                    Gists */
+
+.gist_container{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.gist_container h1{
+	flex-basis: 100%;
+}
+
+.gist_container > div:first-of-type{
+	flex:3;
+	margin-right: 24px;
+}
+
+.gist_container > div:last-of-type {
+	flex: 1;
+ }
+
+@media (max-width:1024px){
+	.gist_container{
+		display: flex;
+		flex-flow: column;
+	}
+
+	.gist_container > div:first-of-type{
+		flex:1;
+		margin-right: 0px;
+		order: 2;
+	}
+
+	.gist_container > div:last-of-type {
+		flex: 1;
+		margin-bottom: 36px;
+		order: 1;
+	 }
+}
+
+
+
+*.gist *{
+    font-family: monospace;
+	 font-weight: 500;
+	 font-size: 1em !important;
+
+}
+
+.gist, .gist-file, .gist-data, .js-gist-file-update-container, .js-task-list-container, .file-box{
+	max-height: 480px !important;
 }

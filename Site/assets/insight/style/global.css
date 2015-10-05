@@ -1,0 +1,472 @@
+/* ----------------------------------------- RESETS */
+
+ul, li{
+	list-style:none;
+	}
+
+img{
+	border:none;
+	outline:none;
+	}
+
+
+
+
+
+.cs1_ls, .cs1_ls, .cs1_ps,.cs2_ls, .cs2_ls, .cs2_ps,.cs3_ls, .cs3_ls, .cs3_ps,.cs4_ls, .cs4_ls, .cs4_ps,.cs5_ls, .cs5_ls, .cs5_ps,.cs6_ls, .cs6_ls, .cs6_ps, .pagination, .mm_arrow_l, .mm_arrow_r,  .essay, .answer, .again, .submit_essay, .chart, .chart_btns, .next_01, .essay_02, .again_02, .submit_popover, .next_q{
+	display:none;
+}
+
+
+
+iframe{
+	border: 25px solid #222;
+	box-shadow: 3px 3px 20px rgba(0,0,0,.4);
+	border-radius: 20px;
+	position: absolute;
+	left:0;
+	right: 0;
+	margin: auto;
+}
+
+
+
+
+
+/* ----------------------------------------- GLOBAL LAYOUT */
+
+body{
+	background-color: rgba(0,0,0,.2);
+	margin:0px;
+	-webkit-font-smoothing:antialiased;
+	font-family: 'Sanchez', sans-serif;
+	font-size:11pt;
+	color:#1D1D1D;
+	}
+
+video{
+	width:1024px;
+	height: 748px;
+	z-index: -100;
+	position: absolute;
+	top:0;
+	left:0;
+	visibility:hidden;
+}
+
+#container{
+	height:718px;
+	width:994px;
+	padding:15px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	margin:auto; 
+	z-index: 100;		 
+	}
+
+.main{
+	background-image: url(../img/bg_main.jpg);
+		background-repeat: no-repeat;
+	background-position: center top;
+
+}
+
+.cs1bg{
+	background-image: url(../img/bg_cs1.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.cs2bg{
+	background-image: url(../img/bg_cs2.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+
+	
+#col_01{
+	width:75px;
+	height:671px;
+	float:left;
+	}
+
+#col_02{
+	width:919px;
+	height:671px;
+	float:left;
+	}
+
+#row_01{	
+	width:994px;
+	height:47px;
+	clear:both
+	}
+
+
+
+/* ----------------------------------------- ELEMENTS */
+
+h1{
+	position:absolute;
+	top:15px;
+	display:block;
+	margin:0px;
+	font-family: 'ASAP-Regular', sans-serif;	
+	font-size: 12pt;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	}
+	
+h2{
+	font-size: 12pt;
+	text-transform: uppercase;
+	margin:0px;
+	padding-bottom:2px;
+	-webkit-font-smoothing:subpixel-antialiased;
+	}
+
+h3{
+	font-size: 10pt;
+	font-family:'Sanchez';
+	text-transform: uppercase;
+	margin:0px;
+	padding-top:17px;
+	padding-bottom:2px;
+	-webkit-font-smoothing:subpixel-antialiased;
+	}
+
+	
+h5{
+	font-size: 14pt;
+	line-height: 20px;	
+	text-transform: uppercase;
+	margin:0px;
+	padding-bottom:2px;
+	-webkit-font-smoothing:subpixel-antialiased;
+	}
+
+h6{
+	font-size: 12pt;
+	line-height: 12pt;
+	text-transform: uppercase;
+	margin:0px;
+	padding-bottom:2px;
+	-webkit-font-smoothing:subpixel-antialiased;
+	color:#2e9aa4;
+	margin-top: 20px;
+	}
+
+
+/* ----------------------------------------- SMALL BUTTONS */
+
+.sml span{
+	display:block;
+	margin-bottom:10px;
+	width: 68px;
+	height: 56px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.8);
+	cursor: pointer;
+
+	}
+
+.sml span:active{
+	background-position:0px -56px;
+	}
+
+._s, .sml span._s:active{
+	background-position:0px -112px;
+	}
+
+._i, .sml span._i:active{
+	background-position:0px -168px;
+	}
+
+#home{
+	background-image:url(../img/btn_sml_home.png); 
+	background-position:0x;
+	}
+
+#sound{
+	background-image:url(../img/btn_sml_sound.png); 
+	background-position:0x;
+	}
+
+#skip{
+	background-image:url(../img/btn_sml_skip.png); 
+	background-position:0x;
+	}
+
+#info{
+	background-image:url(../img/btn_sml_info.png); 
+	background-position:0x;
+	}
+	
+	
+#back{
+	background-image:url(../img/btn_back.png); 
+	background-position:0x;
+	}
+
+.close{
+	background-image:url(../img/btn_sml_close.png); 
+	background-position:0x;
+	}
+
+#replay{
+	background-image:url(../img/btn_sml_replay.png); 
+	background-position:0x;
+	}
+
+/* ------------------------------------------ TEXT BUTTONS */
+
+.txt {
+	display: inline-block;
+	background-color: #2E9AA4;
+	padding:0px;
+	padding-left:26px;
+	padding-right: 26px;
+	height:25px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.8);
+	border-width:10px;
+	border-radius: 10px;
+	-moz-border-image:url(../img/btn_01.png) 11 stretch; /* Firefox */
+	-webkit-border-image:url(../img/btn_01.png) 11 stretch; /* Safari */
+	-o-border-image:url(../img/btn_01.png) 11 stretch; /* Opera */
+	border-image:url(../img/btn_01.png) 11 stretch;
+	cursor:pointer;
+	text-align:center;
+	}
+
+.txt:active {
+	-moz-border-image:url(../img/btn_02.png) 11 stretch; /* Firefox */
+	-webkit-border-image:url(../img/btn_02.png) 11 stretch; /* Safari */
+	-o-border-image:url(../img/btn_02.png) 11 stretch; /* Opera */
+	border-image:url(../img/btn_02.png) 11 stretch;
+	background-color: #5DCEd9;
+	
+	}
+
+
+	
+.sound_overlay {
+	display: inline-block;
+	background-color: #bae265;
+	padding:10px;
+	padding-bottom:0px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.8);
+	border-width:10px;
+	border-radius: 10px;
+	-moz-border-image:url(../img/btn_03.png) 11 stretch; /* Firefox */
+	-webkit-border-image:url(../img/btn_03.png) 11 stretch; /* Safari */
+	-o-border-image:url(../img/btn_03.png) 11 stretch; /* Opera */
+	border-image:url(../img/btn_03.png) 11 stretch;
+	cursor:pointer;
+	position: absolute;
+	left:100px;
+	top:82px;
+	z-index:1000;
+	display: none;
+	}
+	
+	
+.sound_overlay span{
+	display:block;
+	margin-bottom:10px;
+	width: 207px;
+	height: 25px;
+	cursor: pointer;
+	}
+
+
+#sound_effects{
+	background-image:url(../img/txt_sound.png); 
+	margin-bottom: 15px;
+	background-repeat: no-repeat;
+	}
+	
+#narration{
+	background-image:url(../img/txt_narration.png); 
+	background-repeat: no-repeat;
+	}
+	
+.checked{
+	background-position:0px 0px;
+}
+
+.unchecked{
+	background-position:0px -25px;
+}
+	
+	
+
+/* ----------------------------------------- ESSAY */
+
+.answer{
+	margin-left:10px;
+	height:98%;
+	background-color: rgba(233,233,233,.9);
+	border-radius:7px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.5);
+	}
+
+.answer h1{
+	margin-top:14px;
+	}
+
+.answer_head{
+	color:#FFF;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;	
+	padding:20px;
+	}
+
+.answer_desc{
+	margin-top:20px;
+	font-family:'ASAP-Bold';
+	font-weight:700;
+	font-size:19pt;
+	line-height:22pt;
+	}
+
+.answer_divider{
+	display:block;
+	width:100%-20px;
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:40px;
+	background-color:rgba(0,0,0,.3);
+	height:1px;	
+	z-index:1;
+	}
+
+textarea{
+	display:block;	
+	border:0px;
+	outline:0px;
+	background-color:rgba(255,255,255,0);
+	width:95%;
+	height:525px;
+	margin-right:20px;
+	margin-left:20px;
+	margin-top:-525px;
+	z-index:2;
+	font-family:'Sanchez';
+	font-size:18pt;
+	line-height:31pt;
+	-webkit-font-smoothing:antialiased;
+}
+
+.again, .mm_restart, .aboutbtn, .back02, .backlogin{
+	margin-right:10px;
+	}
+
+.cs1 .answer_head, .cs1 .submit_head{
+	background-color:rgba(115,93,197,.9);
+	}
+
+.mainp .submit_head{
+	background-color:#2E9AA4;
+	}
+
+.cs2 .answer_head, .cs2 .submit_head{
+	background-color:rgba(215,128,62,.9);
+	}
+	
+
+.submit_popover{
+	display: table;
+	width:450px;
+	position:absolute;
+	top:0;
+	bottom:45px;
+	left:0px;
+	right:0;
+	margin:auto; 
+	border-radius:7px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.5);
+	background-color: rgba(233,233,233,.9);
+	
+}
+
+.submit_head{
+	color:#FFF;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;	
+	padding:20px;
+	font-family:'ASAP-Bold';
+	font-size:19pt;
+	line-height:22pt;
+}
+
+.submit_desc{
+	padding:20px;
+	height:90px;
+
+}
+
+.submit_popover .divider, .answer .divider{
+	display:block;
+   	width:100%;
+   	height:1px;
+	}
+
+
+/*-------------------------------------------  POPOVER */
+
+
+
+
+.popover{
+	display:none;
+	width:400px;
+	height:130px;
+	position:absolute;
+	top:0;
+	bottom:45px;
+	left:0px;
+	right:0;
+	margin:auto; 
+	border-radius:7px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.5);
+	background-color: rgba(233,233,233,1);
+	}
+
+
+.popover_saving {
+	display: table;
+	width:619px;
+	padding:15px;
+	padding-bottom: 20px;
+	position:absolute;
+	top:0;
+	bottom:45px;
+	left:0px;
+	right:0;
+	margin:auto; 
+	border-radius:7px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.5);
+	background-color: rgba(233,233,233,1);
+	}
+
+.mainp .txt{
+	margin-top: 20px;
+}
+
+.mainp .submit_desc{
+	height: 110px;
+}
+.popover_desc{
+	padding:20px;
+	height:90px;
+	text-align: center;
+	}
+
+.popover .txt{
+	margin-top: 20px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.3);
+}
+

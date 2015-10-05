@@ -1,0 +1,55 @@
+/* @license
+ * MyFonts Webfont Build ID 2200155, 2012-04-02T16:22:14-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Sanchez by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/sanchez/regular/
+ * 
+ * Webfont: Sanchez Italic by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/sanchez/ital/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2200155
+ * Licensed pageviews: unlimited
+ * Webfonts copyright: Copyright (c) 2011 by Daniel hern&#x0087;ndez. All rights reserved.
+ * 
+ * © 2012 Bitstream Inc
+*/
+
+
+
+  
+@font-face {
+	font-family: 'Sanchez';
+	src: url('../fonts/21925B_0_0.eot');
+	src: url('../fonts/21925B_0_0.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/21925B_0_0.woff') format('woff'),
+		 url('../fonts/21925B_0_0.ttf') format('truetype');
+	}
+ 
+  
+@font-face {
+	font-family: 'Sanchez-Italic';
+	src: url('../fonts/21925B_1_0.eot');
+	src: url('../fonts/21925B_1_0.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/21925B_1_0.woff') format('woff'),
+		 url('../fonts/21925B_1_0.ttf') format('truetype');
+	}
+
+
+@font-face {
+	font-family: 'Asap-Bold';
+	font-style: normal;
+	src:url('../fonts/Asap-Bold.ttf') format('truetype');
+	}
+	
+@font-face {
+	font-family: 'Asap-Regular';
+	font-style: normal;
+	src:url('../fonts/Asap-Regular.ttf') format('truetype');
+	}

@@ -1,0 +1,184 @@
+
+
+/*------------------------------------------- PANEL LAYOUT - EQUAL HEIGHT */
+
+.info_container{
+	display: table;
+	width:760px;
+	position:absolute;
+	top:0;
+	bottom:45px;
+	left:30px;
+	right:0;
+	margin:auto; 
+	border-radius:7px;
+	box-shadow: 3px 3px 9px rgba(0,0,0,.5);
+	z-index: 800;
+	}
+
+.row{
+	display: table-row;
+	}
+
+.info_l, .info_r, .divider {
+	display: table-cell;
+    }
+    
+   
+   
+
+    
+/*-------------------------------------------  PANEL STYLES */
+
+	
+.info_l{
+  	background-color:rgba(215,128,62,.9);
+   	width:270px;
+   	padding:20px;
+   	border-top-left-radius: 7px;
+   	border-bottom-left-radius:7px;
+	font-family:  'ASAP-Bold';
+	font-size: 19pt;
+   	color: #FFF;
+	}
+
+.divider{
+	background-color: rgba(0,0,0,.7);
+   	width:1px;
+	}
+	
+.info_r{
+	width:449px;
+	padding:0px;
+	color: #1D1D1D;
+	background-color: rgba(233,233,233,.9);
+	border-top-right-radius:7px;
+	border-bottom-right-radius: 7px;
+	}
+	
+	
+	
+	
+/*------------------------------------------- PANEL CONTENT - LEFT */	
+	
+
+
+.info_desc{
+	position:absolute;
+	top:45px;
+	width:270px;
+	line-height:22pt;
+}
+
+.info_specs{
+	font-size:10pt;
+	font-family:'Sanchez';
+	position:absolute;
+	bottom:20px;
+}
+
+
+
+
+/*-------------- PROGRESS BAR */
+
+.progress{
+	width:266px;
+	height:11px;
+	border-radius:7px;
+	border:2px solid #000;
+	background-color:white;
+	}
+	
+.bar{
+	width:150px;
+	height:11px;
+	margin:-2px;
+	padding:0px;
+	border:2px solid #000;
+	border-top-left-radius:7px;
+	border-bottom-left-radius:7px;
+	}
+	
+	
+.lines{
+	margin:0px;
+	margin-left:8px;
+	padding:0px;
+	width:248px;
+	height:7px;
+	background-image:url(../img/progress.png);
+	background-repeat: repeat-x;
+	}
+
+
+
+
+/*------------------------------------------- PANEL CONTENT - RIGHT */
+
+.step{
+	margin:20px;
+	font-family: 'Sanchez', sans-serif;	
+	font-size: 11pt;	
+	padding-top:0px;
+	
+	}
+
+.check{
+	width:28px;
+	height:23px;
+	margin-top:-7px;
+	margin-right:6px;
+	background-image: url(../img/check.png);
+	float:left;
+	}
+
+.info_r .divider{
+	background-color: rgba(0,0,0,.3);
+   	width:449px;
+   	height:1px;
+   	clear:both;
+	}
+	
+.step_details{
+	margin-left:35px;
+	}
+
+
+
+
+/*------------------------------------------- CS - SPECIFIC*/	
+
+
+.cs2 .info_l{
+	background-color:rgba(215,128,62,.9);
+	}
+	
+.cs2 .check{
+	background-position: 0px 0px;
+	}
+
+.cs2 .check:hover{
+	background-position: 0px 23px;
+	}
+	
+.cs2 .bar{
+	background-color:#e2b490;
+	}
+	
+.cs1 .info_l{
+	background-color:rgba(115,93,197,.9);
+	}
+	
+.cs1 .check{
+	background-position: 28px 0px;
+	}
+
+.cs1 .check:hover{
+	background-position: 28px 23px;
+	}
+	
+.cs1 .bar{
+	background-color:#bcb0ea;
+	}
+	
