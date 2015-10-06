@@ -98,7 +98,9 @@ section{
 #detail_about div{
 	flex: 1;
 	margin: 0px 24px;
+	justify-content: center;
 }
+
 
 @media (max-width: 1024px) {
 	section{
@@ -282,6 +284,15 @@ img[src*="03"]{
 	margin-top: 48px;
 }
 
+.ikea div{
+	order: 2;
+}
+.ikea div:last-of-type{
+	order: 1;
+	margin-top: 0px !important;
+	margin-bottom: 48px;
+}
+
 #detail_05 div:last-of-type a{
 	background-color: white;
 	border: 2px solid #362B3C;
@@ -296,6 +307,7 @@ img[src*="03"]{
 	font-size: 1.25em;
 	text-align: center;
 }
+
 
 #detail_05 div:last-of-type a:hover{
 		border-color: #E3A730;
@@ -318,8 +330,45 @@ img[src*="03"]{
 
 #detail_05 embed{
 	width: 100%;
-		height: 640px;
+	height: 640px;
 }
+
+.jcp embed{
+	width: 40% !important;
+	height: 720px !important;
+}
+/*                                   Simple Screenshot */
+
+#simple{
+	display: flex;
+	flex-flow: column;
+}
+
+#simple h1{
+	flex-basis: 100%;
+}
+
+#simple div{
+	order: 2;
+}
+
+#simple p{
+	margin-top: 18px;
+	font-size: 1.3em;
+	order: 1;
+}
+
+
+#simple > div{
+	flex-basis: 100%;
+}
+
+#simple img{
+	width:100%;
+	object-fit: contain;
+	object-position: top;
+}
+
 
 
 
