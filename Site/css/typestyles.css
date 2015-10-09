@@ -122,12 +122,16 @@ a{
 	text-decoration:	none;
 	text-transform:	uppercase;
 	font-weight: 		500;
-	//color: 			#cca313;
+	color: 				#119d84;
 }
 
 #expContainer a  	{
 	text-transform: 	none;
 	font-weight: 		inherit;
+}
+
+#wsContainer a  	{
+	text-transform:capitalize;
 }
 
 

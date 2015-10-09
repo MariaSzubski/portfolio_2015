@@ -33,7 +33,7 @@ header{
 	flex-flow: column;
 	align-items: center;
 	padding-top: 132px;
-	padding-bottom: 72px;
+	padding: 96px 36px 72px 36px;
 	//background-color: rgba(54, 43, 60, 0.1);
 	background-image: url('../img/bg.png');
 }
@@ -60,7 +60,7 @@ header > img{
 	width: 48px;
 }
 
-#social li:hover > img{
+#social li:hover  img{
 	margin-top: -51px;
 	cursor: pointer;
 }
@@ -241,6 +241,11 @@ header > img{
 	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 
+.caseStudy:hover, .caseStudy:active{
+	border: 2px solid #E3A730;
+	transition: border .3s;
+}
+
 .caseStudy img{
 	width: 100%;
 	height: 100%;
@@ -260,6 +265,7 @@ header > img{
 	position: absolute;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	padding-left: 24px;
 	box-sizing: border-box;
 	bottom:0px;
@@ -295,7 +301,6 @@ header > img{
 	flex-flow: row;
 	align-items: center;
 	justify-content: flex-end;
-
 	width: 100%;
 	height: auto;
 	margin: 4px;
@@ -324,12 +329,15 @@ header > img{
 
 @media (max-width: 768px) {
 
+	#experience{
+		padding: 0px 36px 72px 36px;
+	}
+
 	#expContainer article{
 		display:flex;
 		flex-flow: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-
 	}
 
 	#expContainer article div:first-child{
@@ -363,6 +371,8 @@ header > img{
 
 #aboutMe h1{
 	flex-basis: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #aboutMe p{
@@ -399,6 +409,26 @@ header > img{
 	margin-bottom: 24px;
 }
 
+
+@media(max-width:768px){
+
+	#aboutMe{
+		flex-flow: column;
+		padding: 0px 36px 72px 36px;
+	}
+
+	#aboutMe > div{
+		flex-flow: column;
+	}
+
+	#aboutMe p{
+		padding-bottom: 36px;
+		margin-right: 0px;
+		font-size: 1.1em;
+	}
+
+}
+
 /*                                     Involvement */
 
 #involveRec{
@@ -430,6 +460,8 @@ header > img{
 	border-top: 2px solid #362B3C;
 	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
+
+
 
 .layer1 img	{
 	position:absolute;
@@ -471,4 +503,54 @@ header > img{
 #invContainer article:hover .layer2{
 	opacity: 1;
 	transition: opacity .4s;
+}
+
+.dotDivider{
+	display: none;
+}
+
+
+@media (max-width:775px){
+	#invContainer article{
+		width: 100%;
+		height:auto;
+		margin: 4px 0px;
+	}
+
+	#invContainer img:first-child	{
+		display: none;
+	}
+
+	.layer1{
+		padding-bottom:6px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	.layer1 h3, .layer1 h4, .dotDivider{
+		display: inline-block;
+	}
+
+	.layer2{
+		opacity:1;
+		position:static;
+		padding-left: 30px;
+		margin-top:12px;
+	}
+
+	#invContainer article:hover {
+		cursor:auto;
+		opacity: 1;
+		transition:none;
+	}
+
+	#invContainer article:hover .layer1{
+		opacity: 1;
+		transition: none;
+	}
+
+
+	#invContainer article:hover .layer2{
+		opacity: 1;
+		transition: none;
+	}
 }

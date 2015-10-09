@@ -69,6 +69,7 @@ header > a, form input[type="submit"]{
 
 header > a:hover, form input[type="submit"]:hover{
 	border-color: #E3A730;
+	transition: border-color .3s;
 }
 
 section{
