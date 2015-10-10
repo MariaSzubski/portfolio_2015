@@ -122,7 +122,7 @@ a{
 	text-decoration:	none;
 	text-transform:	uppercase;
 	font-weight: 		500;
-	color: 				#119d84;
+	//color: 			#cca313;
 }
 
 #expContainer a  	{
@@ -131,13 +131,13 @@ a{
 }
 
 #wsContainer a  	{
-	text-transform:capitalize;
+	text-transform:	capitalize;
 }
 
 
 header a, form input[type="submit"]{
-	font-family: 'Roboto', sans-serif;
+	font-family: 		'Roboto', sans-serif;
 	font-weight:		300;
 	text-transform:	capitalize;
-	font-size: 1.25em;
+	font-size: 			1.25em;
 }

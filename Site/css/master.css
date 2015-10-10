@@ -33,20 +33,29 @@ ul{
 	display: flex;
 	flex-flow: row;
 	justify-content: center;
-	align-items: middle;
+	align-items:center;
 	box-sizing: border-box;
+		text-align: center;
 }
 
 nav li{
-	padding: 12px 0px;
+	background-color: #fff;
+	transition: background-color .4s;
+	text-align: center;
+}
+
+nav li:first-child{
+	display: none;
 }
 
 nav a{
-	padding: 12px 18px;
+	display: block;
+	padding: 15px;
 }
 
 nav li:hover{
 	background-color: rgb(251, 232, 177);
+	transition: background-color .4s;
 }
 
 nav{
@@ -58,6 +67,60 @@ nav{
 	//border-bottom: 4px solid #362B3C;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.5);
 }
+
+
+@media(max-width:1024px){
+
+	nav{
+		background-color: transparent;
+		box-shadow:none;
+	}
+
+	nav:hover{
+		background-color: #fff;
+		box-shadow: 0px 0px 7px rgba(0,0,0,.5);
+		transition: background-color .3s;
+	}
+
+	nav ul{
+		list-style-type: none;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-start;
+		align-items:center;
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+	nav li:first-child{
+		display: block;
+	}
+	nav ul li:not(:first-child){
+		display: none;
+	}
+
+	nav:hover li:not(:first-child){
+		display: block;
+		transition: display .4s;
+	}
+
+	nav li{
+		width: 100%;
+		padding: 0px;
+		font-size: 1.2em;
+		text-align: center;
+		background-color:transparent;
+	}
+
+	nav a{
+		display: block;
+		padding: 24px;
+	}
+
+
+}
+
+
 
 header > a, form input[type="submit"]{
 	background-color: white;
@@ -85,13 +148,17 @@ footer{
 	padding: 0px 36px 36px 36px;
 	background-color: #75685E;
 	border-top: 4px solid #362B3C;
-
-}
-
-
-#contactContainer{
 	display: flex;
+	flex-flow: row wrap;
 }
+
+
+footer h1{
+	flex-basis: 100%;
+	padding: 36px 0px;
+}
+
+
 
 form{
 	flex: 1;
@@ -105,10 +172,6 @@ form input, form textarea{
 	box-sizing: border-box;
 	margin-bottom: 6px;
 	padding: 0px 12px;
-
-
-
-
 		border: 0px solid #362B3C;
 		border-radius: 5px;
 }
@@ -124,10 +187,17 @@ form textarea{
 	flex-flow: column;
 	padding-left: 12px;
 	padding-right: 12px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+ul#socialFooter li{
+	display: flex;
+	align-items: center;
 }
 
 #twitter{
-	flex:1;
+	flex: 1;
 }
 
 #socialFooter div{
@@ -151,4 +221,34 @@ form textarea{
 
 #twitter a{
 	background-color: #75685E;
+}
+
+#copyright{
+	flex-basis: 100%;
+	text-align: center;
+	padding-top: 36px;
+}
+
+@media(max-width: 768px){
+	footer{
+		flex-flow: column;
+		padding: 0px 24px 36px 24px;
+	}
+
+	form{
+		padding-right: 0px;
+	}
+
+
+	#contactSocial{
+		align-items: center;
+	}
+
+	#socialFooter{
+		align-items: flex-start;
+	}
+
+	footer form, #twitter{
+		display:none;
+	}
 }
