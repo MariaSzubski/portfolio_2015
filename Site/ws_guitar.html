@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/typestyles.css" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" charset="utf-8">
 		<link rel="stylesheet" href="css/cs_.css" charset="utf-8">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -50,26 +51,26 @@
 
 
 
-		<section id="detail_02">
+		<section class="slides">
 			<h1>Wireframes</h1>
-			<div>
-				<!-- slides -->
-				<div class="slides">
-					<div class="slides_container">
-							<img src="img/insight/design1_01.png">
-							<img src="img/insight/design1_02.png">
-							<img src="img/insight/design1_03.png">
-							<img src="img/insight/design1_04.png">
-							<img src="img/insight/design1_05.png">
-					</div>
-					<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
-					<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
-				</div>
-				<!-- end slides -->
+			<div 	class="fotorama"
+					data-width="100%"
+					data-fit="contain"
+					data-allowfullscreen="native"
+					data-transition="dissolve"
+					data-loop="true"
+					data-keyboard="true"
+					data-arrows="true"
+					data-click="true"
+					data-swipe="true"
+					data-arrows="always">
+						<img src="img/insight/design1_01.png">
+						<img src="img/insight/design1_02.png">
+						<img src="img/insight/design1_03.png">
+						<img src="img/insight/design1_04.png">
+						<img src="img/insight/design1_05.png">
 			</div>
-
 			<div>
-				<h2>Wireframes &amp;	Design Drafts</h2>
 				<p>Morbi consequat consequat porttitor. Duis et vestibulum nunc. Ut tempor fringilla congue. Sed mattis est sed diam pellentesque condimentum.</p>
 				<p>Nam lacinia velit ex. In vestibulum mattis elit venenatis mollis. Duis nec magna augue. Ut eget dolor eanim. Aliquam erat volutpat. Curabitur facilisis quam nec elementum consectetur. Phasellus consequat pellentesque vulputate.</p>
 				<p>Nunc at ante velit. Phasellus volutpat, velit quis congue varius, est turpis rutrum augue, ut rutrum ante quam ac turpis. Pellentesque aliquam odio felis, sit amet rhoncus arcu consequat ac.</p>
@@ -78,14 +79,14 @@
 		</section>
 
 
-		<section id="detail_05">
-			<h1>Prototype</h1>
+		<section class="endSummary final">
+			<h1>Wireframe Prototype</h1>
 			<div>
 				<p>The interactive prototype is built in HTML &amp; JavaScript. Only the front end elements are wroking.</p>
 			</div>
 			<div>
-				<a href="assets/insight/index.html" target="_blank">Live Demo</a>
-				<a href="https://github.com/MariaSzubski/insight" download>Files on Github</a>
+				<a href="assets/insight/index.html" class="button" target="_blank">Live Demo</a>
+				<a href="https://github.com/MariaSzubski/insight" class="button" download>Files on Github</a>
 			</div>
 		</section>
 
@@ -108,10 +109,25 @@
 			</div>
 		</footer>
 
-		
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 		<script type="text/javascript" src="js/global.js"></script>
 	</body>
 </html>
+
+
+This is a tech demo to demontstrate HTML5 and JavaScript principles.
+
+I've been learning to play guitar this year and have been tracking my progress in a spreadsheet. I thought it would be cool to have a more streamlined location to store this information.
+
+The primary purpose to is demontrate design thinking along with web development skills. I sketched sketched wireframes to highlight the intented funtionality. I translated the sketches into illustrator and then began uploading my progress to github.
+
+The project has two main sections: chord change progress and song notes.
+
+1 Minute Chord Changes: switch between two chords as fast as possible for 60 seconds. The purpose is to build muscle strength and to learn the position of the chords without looking at the fretboard. This section features a 1 minute timer that can be started and reset. Once 1 minute is up, users can record the number of chord changes. They can also view their progress by clicking on a chord group to see a trendline of data.
+
+Song Notes: Users can take brief notes about songs they've learned, including chords, accents, and strumming patterns. They can view these notes while playing or add new songs within the app. This isn't meant to be true guitar tabs, but rather a reference point while you're learning.
+
+The final demo is not 100% functional. Missing database to store information, final design colors, alarm sound at end of timer, charts. This is an on-going project.

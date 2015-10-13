@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/typestyles.css" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" charset="utf-8">
 		<link rel="stylesheet" href="css/cs_.css" charset="utf-8">
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	</head>
 	<body>
 
@@ -48,7 +49,7 @@
 		</section>
 
 
-		<section id="detail_01">
+		<section class="gallery">
 			<h1>Research</h1>
 			<img src="img/insight/research_01.JPG">
 			<img src="img/insight/research_02.JPG">
@@ -58,45 +59,56 @@
 			<img src="img/insight/research_03.jpg">
 		</section>
 
-		<section id="detail_02">
+		<section class="slides">
 			<h1>Design Concept</h1>
-			<div>
-				<!-- slides -->
-				<div class="slides">
-					<div class="slides_container">
-						<img src="img/ikea/design_01.jpg" alt="" width="710" height="460" />
-						<img src="img/ikea/design_02.jpg" alt="" width="710" height="460" />
-						<img src="img/ikea/design_03.jpg" alt="" width="710" height="460" />
-						<img src="img/ikea/design_04.jpg" alt="" width="710" height="460" />
-						<img src="img/ikea/design_05.jpg" alt="" width="710" height="460" />
-						<img src="img/ikea/design_06.jpg" alt="" width="710" height="460" />
-						<img src="img/ikea/design_07.jpg" alt="" width="710" height="460" />
-					</div>
-					<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
-					<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
-				</div>
+			<div 	class="fotorama"
+					data-width="100%"
+					data-fit="contain"
+					data-allowfullscreen="native"
+					data-transition="dissolve"
+					data-loop="true"
+					data-keyboard="true"
+					data-arrows="true"
+					data-click="true"
+					data-swipe="true"
+					data-arrows="always">
+				<img src="img/ikea/design_01.jpg" alt="" width="710" height="460" />
+				<img src="img/ikea/design_02.jpg" alt="" width="710" height="460" />
+				<img src="img/ikea/design_03.jpg" alt="" width="710" height="460" />
+				<img src="img/ikea/design_04.jpg" alt="" width="710" height="460" />
+				<img src="img/ikea/design_05.jpg" alt="" width="710" height="460" />
+				<img src="img/ikea/design_06.jpg" alt="" width="710" height="460" />
+				<img src="img/ikea/design_07.jpg" alt="" width="710" height="460" />
 			</div>
-			<!-- end slides -->
 			<div>
 				<h2>Wireframes &amp;	Design Drafts</h2>
 				<p>Morbi consequat consequat porttitor. Duis et vestibulum nunc. Ut tempor fringilla congue. Sed mattis est sed diam pellentesque condimentum.</p>
 				<p>Nam lacinia velit ex. In vestibulum mattis elit venenatis mollis. Duis nec magna augue. Ut eget dolor eanim. Aliquam erat volutpat. Curabitur facilisis quam nec elementum consectetur. Phasellus consequat pellentesque vulputate.</p>
 				<p>Nunc at ante velit. Phasellus volutpat, velit quis congue varius, est turpis rutrum augue, ut rutrum ante quam ac turpis. Pellentesque aliquam odio felis, sit amet rhoncus arcu consequat ac.</p>
 			</div>
-
 		</section>
 
 
-		<section id="detail_05" class="ikea">
+		<section class="endSummary video final">
 			<h1>Final Deliverables</h1>
 			<div>
 				<p>This animation details the overall user experience and application features.</p>
 			</div>
-			<div>
-				<embed src="https://player.vimeo.com/video/42097862" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></embed>
+			<div 	class="fotorama"
+					data-width="100%"
+					data-ratio="4/3"
+					data-fit="cover"
+					data-transition="dissolve"
+					data-loop="true"
+					data-keyboard="true"
+					data-arrows="true"
+					data-click="true"
+					data-swipe="true"
+					data-arrows="always">
+				 <a href="https://player.vimeo.com/video/42097862">Rethinking IKEA</a>
 			</div>
 			<div>
-				<a href="assets/IKEA_ProcessBook.pdf" download>Download Design Process Book</a>
+				<a href="assets/IKEA_ProcessBook.pdf" class="button" download>Download Design Process Book</a>
 			</div>
 		</section>
 
@@ -121,8 +133,38 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 		<script type="text/javascript" src="js/global.js"></script>
 	</body>
 </html>
+
+IKEA RFID Scanner re-thinks the IKEA shopping experience, using an electronic shopping list and re-designed in-store navigation. The scanner making it easier to navigate the store and find items in the warehouse.
+This was a team project with Matt Denzer.
+
+
+The video highlights the features of this design concept. The following slides analyze problems within the current IKEA shopping experience.
+
+Our process began with an initial visit to IKEA, both to take photos and observe the existing shopping experience.During our visit, we isolated several problem areas, and noted what IKEA seemed to do well.
+
+
+Goals:
+wayfinding
+motion grahics
+ux design
+
+---
+
+Our area of improvement incuded the maps, the room design kiosks, the self serve warehouse process, and the price check stations.
+
+We combined our observations on the user experience into this flow chart.
+*****ADD FLOW CHART*****
+
+----
+The first round of design focused on spatial analysis. We chose to go with an isometric view of the store, focusing on both the micro and macro levels of the current user experience.
+
+----
+Once the initial analysis was complete. We made recommendations for improvement. Our re-imagined experience focuses on RFID devices that users carry through the store to track their shopping lists. The can quickly add and remove items on the device or view more details about the products they've scanned on kiosks located throughout the store.
+
+The motion graphic piece details two complete user experiences. The first focuses on the user who wants to browse and compare. The second focuses on a user who has a product in mind and wants to quickly jump to that section and then move on to the checkout.
+***which is first?***

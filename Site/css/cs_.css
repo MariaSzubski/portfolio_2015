@@ -3,10 +3,11 @@
 	TABLE OF CONTENTS
 		Header
 		About
-		Research
-		Testing
-		Revisions
-		Prototype
+		Gallery
+		Slides
+		End Summary
+		Final section
+		Gists
 
 
 	COLORS
@@ -32,7 +33,7 @@ html, body{
 nav{
 	position: relative;
 }
-/*                                    Header */
+/*                                    Work Sample: Header */
 header{
 	display: flex;
 	flex-flow: column wrap;
@@ -82,18 +83,20 @@ header img{
 	object-position: center;
 	box-sizing: border-box;
 	height: 80%;
-	opacity: .3;
+	opacity: .22;
+	-webkit-filter: blur(11px);
+	filter: blur(11px);
 }
 
 
-/*                                    Sections */
+/*                                    Work Sample: Sections */
 section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
-		padding: 0px 108px 156px 108px;
+		padding: 0px 96px 156px 96px;
 }
 
-/*                                    About */
+/*                                    Work Sample: About Section */
 #detail_about{
 	box-sizing: border-box;
 	display: flex;
@@ -108,9 +111,15 @@ section{
 	flex: 1;
 	margin: 0px 24px;
 	justify-content: center;
+
 }
 
-@media (max-width: 1024px) {
+#detail_about p{
+	font-size: 1.3em;
+	font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 768px){
 	section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
@@ -127,25 +136,42 @@ section{
 	}
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+	section{
+		box-sizing: border-box;
+		border-top: 4px solid #362B3C;
+		padding: 0px 72px 72px 72px;
+	}
+
+	#detail_about{
+		flex-flow: column;
+	}
+
+	#detail_about div{
+		flex: 1;
+		margin: 24px 0px;
+	}
+}
+
 section p{
+	line-height: 140%;
+	margin-bottom: 12px;
 	font-family: 'Roboto Slab', serif;
-	font-size: 1.3em;
-	line-height: 1.4em;
 }
 
 
-/*                                    Detail Section 01 */
-#detail_01 {
+/*                                    Work Sample: Gallery Section */
+.gallery {
 	display: flex;
 	flex-flow: row wrap;
 	background-image: url('../img/bg.png');
 }
 
-#detail_01 h1{
+.gallery h1{
 	flex-basis: 100%;
 }
 
-#detail_01 img{
+.gallery img{
 	box-sizing: border-box;
 	display: block;
 
@@ -162,153 +188,148 @@ img[src*="03"]{
 	flex: 2 0 30%;
 }
 
-
-
-
-/*                                    Detail Section 02 */
-
-#detail_02{
-	display: flex;
-	flex-flow: row wrap;
-}
-
-#detail_02 h1{
-	flex-basis: 100%;
-}
-
+/*                                   Work Sample: Slides Section */
 
 .slides{
-	max-width: 640px;
-	overflow: hidden;
-	object-fit: cover;
-}
-
-.slides_container{
-	max-width: 640px;
-	height: 480px;
-	object-fit: cover;
-	overflow: hidden;
-}
-
-.slides_container img{
-	max-width: 640px;
-	height: 480px;
-	object-fit: cover;
-	overflow: hidden;
-}
-
-#detail_02 > div{
-	flex: 1;
-
-}
-
-#detail_02 > div:first-of-type{
-	display: flex;
-	justify-content: center;
-}
-
-#detail_02 p{
-	margin-top: 18px;
-	font-size: 1.3em;
-}
-
-
-
-
-/*                                    Detail Section 03 */
-#detail_03{
 	display: flex;
 	flex-flow: row wrap;
 }
 
-#detail_03 h1{
+.slides h1{
 	flex-basis: 100%;
 }
 
-#detail_03 div{
-	flex: 1;
- 	height: 500px;
+.slides > .fotorama{
+	order: 1;
+	max-width: 58%;
 }
 
-#detail_03 > div:last-of-type{
-	display: flex;
-	flex-flow: row wrap;
-
-	padding-left: 72px;
+.slides > div:last-of-type{
+	margin-top: 18px;
+	font-size: 1.3em;
+	line-height: 150%;
+	order: 2;
+	margin-left: 4%;
+	width: 38%;
 }
 
-#detail_03 img{
-	height: 50%;
-	flex: 1 0 40%;
-	border: 2px solid #362B3C;
-	object-fit: contain;
-}
 
-/*                                    Detail Section 04 */
-#detail_04{
-	display: flex;
-	flex-flow: row wrap;
-}
-
-#detail_04 h1{
+.slides > .fotorama{
 	flex-basis: 100%;
 }
 
-
-#detail_04 > div{
-	flex: 1;
+.video > div:first-of-type{
+	order: 2;
+	margin-top: 48px;
+}
+.video > div:last-of-type{
+	order: 1;
 }
 
-#detail_04 > div:first-of-type{
-	display: flex;
-	justify-content: center;
+.video > .fotorama{
+	max-width: 60%;
+	max-height: 50%;
+	order: 3;
+	margin-top: 0px !important;
+	margin-bottom: 48px;
 }
 
-#detail_04 p{
-	margin-top: 18px;
-	font-size: 1.3em;
+.slides.reverse > .fotorama{
+	order: 2;
+}
+
+.slides.reverse > div:last-of-type{
+	order: 1;
 }
 
 
+@media (max-width: 1024px){
+	.slides > .fotorama{
+		max-width: 100%;
+	}
+
+	.slides > div:last-of-type{
+		margin-left: 2%;
+		margin-right: 0%;
+		margin-bottom: 24px;
+		width:100%;
+		font-size: 1.2em;
+	}
+
+	.slides.reverse > div:last-of-type{
+		margin-left: 0%;
+		margin-right: 2%;
+	}
+
+	.slides.reverse .fotorama{
+		order: 1;
+	}
+
+	.slides.reverse > div:last-of-type{
+		order: 2;
+	}
+}
 
 
-/*                                    Detail Section 05 */
+@media (min-width: 1025px) and (max-width: 1680px){
+	.slides > .fotorama{
+		max-width: 62%;
+	}
 
-#detail_05{
+	.slides > div:last-of-type{
+		margin-left: 4%;
+		margin-right: 0%;
+		width: 34%;
+		font-size: 1.1em;
+	}
+
+	.slides.reverse > div:last-of-type{
+		margin-left: 0%;
+		margin-right: 4%;
+	}
+}
+
+@media (min-width: 1681px){
+	.slides > .fotorama{
+		max-width: 64%;
+	}
+
+	.slides > div:last-of-type{
+		margin-left: 4%;
+		margin-right:0%;
+		width: 32%;
+	}
+
+	.slides.reverse > div:last-of-type{
+		margin-left: 0%;
+		margin-right: 4%;
+	}
+}
+
+
+/*                                    Work Sample: End Summary */
+
+.endSummary{
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	background-position: center;
-	background-color: #362B3C;
 }
 
-#detail_05 div{
+.endSummary > div{
 	display: flex;
 	justify-content: center;
 	width: 100%;
 
 }
 
-#detail_05 p, #detail_05 a{
-		color: #fff !important;
+.endSummary p, .endSummary a{
 		text-align: center;
+		font-size: 1.3em;
 }
 
-#detail_05 div:last-of-type{
-	margin-top: 48px;
-}
 
-.ikea div{
-	order: 2;
-}
-
-.ikea div:last-of-type{
-	order: 1;
-	margin-top: 0px !important;
-	margin-bottom: 48px;
-}
-
-#detail_05 div:last-of-type a{
+.endSummary div:last-of-type a.button{
 	background-color: #362B3C;
 	border: 2px solid rgba(255, 255, 255, 0.5) ;
 	padding: 12px 32px;
@@ -323,67 +344,33 @@ img[src*="03"]{
 	text-align: center;
 }
 
-#detail_05 div:last-of-type a:hover{
+.endSummary div:last-of-type a:hover{
 		border-color: #E3A730;
 }
 
 @media (max-width: 1024px) {
 
-	#detail_05 div{
+	.endSummary div{
 		flex-flow: column;
 	}
 
-	#detail_05 div:last-of-type a{
+	.endSummary div:last-of-type a{
 		margin: 6px 0px;
 	}
 }
 
 
-#detail_05 img{
-	width:50%;
-}
 
-#detail_05 embed{
-	width: 100%;
-	height: 640px;
-}
 
-.jcp embed{
-	width: 40% !important;
-	height: 720px !important;
-}
-/*                                   Simple Screenshot */
-
-#simple{
-	display: flex;
-	flex-flow: column;
-}
-
-#simple h1{
-	flex-basis: 100%;
-}
-
-#simple div{
-	order: 2;
-}
-
-#simple p{
-	margin-top: 18px;
-	font-size: 1.3em;
-	order: 1;
+/*                                  	Work Sample: Final Section */
+.final{
+	background-color: #362B3C;
 }
 
 
-#simple > div{
-	flex-basis: 100%;
+.final div * {
+	color: #fff;
 }
-
-#simple img{
-	width:100%;
-	object-fit: contain;
-	object-position: top;
-}
-
 
 
 
