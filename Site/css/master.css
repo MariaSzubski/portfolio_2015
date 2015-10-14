@@ -47,28 +47,45 @@ nav{
 	width: 100%;
 	//border-bottom: 4px solid #362B3C;
 	box-shadow: 0px 0px 7px rgba(0,0,0,.5);
+		box-sizing: border-box;
 }
 
 nav li{
 	//background-color: #fff;
 	transition: background-color .4s;
 	text-align: center;
+		box-sizing: border-box;
 }
 
 nav li:first-child{
 	display: none;
+		box-sizing: border-box;
 }
 
 nav a{
 	display: block;
 	padding: 15px 18px 14px 18px;
+	box-sizing: border-box;
+	padding: 12px 32px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 400;
 }
 
 nav li:hover{
-	background-color: rgb(251, 232, 177);
-	transition: background-color .4s;
+	box-sizing: border-box;
+	background-color: #FCC457;
+	color: #362B3C !important;
+	transition: background-color .3s ease;
 }
 
+nav li:hover a{
+	color: #362B3C;
+	padding: 12px 32px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 400;
+}
 
 
 
@@ -115,20 +132,26 @@ nav li:hover{
 
 
 
-header > a, form input[type="submit"]{
+header > a{
 	background-color: #ffffff;
-	border: 2px solid #362B3C;
+	border: 2px solid #238D83;
+	color: #238D83;
 	padding: 12px 32px;
 	border-radius: 5px;
 	cursor: pointer;
 	font-weight: 400;
+	transition: border-color .3s ease, background-color .3s ease, color .3s ease;
 }
 
-header > a:hover, form input[type="submit"]:hover{
+header > a:hover{
 	border-color: #E3A730;
 	background-color: #fcc457;
-	transition: border-color .3s;
-	transition: background-color .3s;
+	color: #362B3C;
+	padding: 12px 32px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 400;
+	transition: border-color .3s ease, background-color .3s ease, color .3s ease;
 }
 
 section{
@@ -170,6 +193,8 @@ footer h1{
 	justify-content: center;
 	align-items: center;
 	margin: 0px 18px;
+	color:#362B3C;
+	padding: 0px;
 }
 
 #contactSocial div{
@@ -183,7 +208,7 @@ footer h1{
 	width: 48px;
 }
 
-#contactSocial div:hover > img{
+#contactSocial a:hover img{
 	margin-top: -51px;
 	cursor: pointer;
 }

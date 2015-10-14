@@ -33,11 +33,15 @@ header h1{
 	font-family: 		'Roboto', sans-serif;
 	font-weight: 		400;
 	font-size: 			2.6em;
-	color:				#362b3C;
+	color:				#3E5054;
 	text-transform:	capitalize;
 	text-align: 		center;
 	text-shadow:		none;
 	padding: 			18px 0px 0px 0px;
+}
+
+.final h1, #aboutMe h1, #workSamples h1{
+	color: #FCC457;
 }
 
 h2{
@@ -53,6 +57,7 @@ h3{
 	font-size: 			1.25em;
 	font-weight: 		300;
 	margin-top: 		6px;
+	color:				#3E5054;
 	//border-bottom: 1px solid #ccc;
 }
 
@@ -60,6 +65,7 @@ h4, #invContainer h3{
 	font-family:		'Roboto', serif;
 	font-size: 			1em;
 	margin-top: 		6px;
+	color:				#3E5054;
 }
 
 h5{
@@ -122,7 +128,17 @@ a{
 	text-decoration:	none;
 	text-transform:	uppercase;
 	font-weight: 		500;
-	//color: 			#cca313;
+	color: 				#238D83;
+}
+
+a:hover {
+	text-decoration:	underline;
+	text-transform:	uppercase;
+	box-sizing: 		border-box;
+	font-weight: 		500;
+	//color: 				#362B3C;
+	//background-color: #FCC457;
+	padding: 			5px 0px;
 }
 
 #expContainer a  	{
