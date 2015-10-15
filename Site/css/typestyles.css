@@ -1,7 +1,7 @@
 /*                                     Global
 
 COLORS
-	Yellow:	 	#E3A730
+	Yellow:	 	#E3A730,  #fcc457
 	Dark Gray: 	#362B3C
 	Dark Brown: #75685E
 
@@ -13,7 +13,7 @@ COLORS
 *{
 	font-family: 		'Roboto', sans-serif;
 	font-weight: 		300;
-	color: 				#362B3C;
+	color: 				#3E5053;
 }
 
 
@@ -43,39 +43,45 @@ header h1{
 	color: #FCC457;
 }
 
+
+
 h2{
 	font-size: 			1.375em;
 	font-weight: 		500;
+	color:				#362B3C;
 }
 
 #invContainer h2{
 	font-size: 			1.125em;
 }
 
+
 h3{
 	font-size: 			1.25em;
 	font-weight: 		300;
 	margin-top: 		6px;
-	color:				#3E5054;
+	color:				#362B3C;
 }
 
 h4, #invContainer h3{
 	font-family:		'Roboto', serif;
 	font-size: 			1em;
 	margin-top: 		6px;
-	color:				#3E5054;
+	color:				#362B3C;
 }
 
 h5{
 	font-family: 		'Roboto Condensed', serif;
 	font-size: 			1.25em;
 	text-align: 		center;
+	color:				#362B3C;
 }
 
 h6{
 	font-size: 			1em;
 	margin-top: 		6px;
 	display: 			flex;
+	color:				#362B3C;
 }
 
 h6 img{
@@ -93,6 +99,10 @@ header p{
 	font-size: 			1.5em;
 	text-align: 		center;
 	text-shadow: 		0px 0px 3px #fff;
+}
+
+.label p{
+	color:				#362B3C;
 }
 
 .label p:first-child{
@@ -126,7 +136,7 @@ form input, form textarea{
 a{
 	text-decoration:	none;
 	text-transform:	uppercase;
-	font-weight: 		500;
+	font-weight: 		400;
 	color: 				#00A8A4;
 }
 
@@ -134,8 +144,8 @@ a:hover {
 	text-decoration:	underline;
 	text-transform:	uppercase;
 	box-sizing: 		border-box;
-	font-weight: 		500;
-	padding: 			5px 0px;
+	font-weight: 		400;
+
 }
 
 #expContainer a  	{
@@ -145,6 +155,24 @@ a:hover {
 
 #wsContainer a  	{
 	text-transform:	capitalize;
+}
+
+nav *{
+	text-transform: capitalize !important;
+	font-weight: 300;
+	transition: color .2s ease;
+
+}
+
+nav li{
+	font-size: 1.125em;
+}
+
+nav li:hover a, nav li:hover span, nav span{
+	color:  #fcc457;
+	font-weight: 300;
+	transition: color .2s ease;
+	text-decoration: none;
 }
 
 
