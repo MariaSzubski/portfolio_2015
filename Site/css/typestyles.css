@@ -22,9 +22,8 @@ h1{
 	font-family: 		'Roboto Condensed', sans-serif;
 	font-weight: 		300;
 	font-size: 			3.5em;
-	color:				#FCC457;
+	color:				#362B3C;
 	text-transform: 	uppercase;
-	text-shadow: 		1px 1px 1px #362b3C;
 	text-align: 		center;
 	padding: 			36px;
 }
@@ -33,10 +32,10 @@ header h1{
 	font-family: 		'Roboto', sans-serif;
 	font-weight: 		400;
 	font-size: 			2.6em;
-	color:				#3E5054;
+	//color:				#3E5053;
 	text-transform:	capitalize;
 	text-align: 		center;
-	text-shadow:		none;
+	text-shadow: 		0px 0px 3px #fff;
 	padding: 			18px 0px 0px 0px;
 }
 
@@ -58,7 +57,6 @@ h3{
 	font-weight: 		300;
 	margin-top: 		6px;
 	color:				#3E5054;
-	//border-bottom: 1px solid #ccc;
 }
 
 h4, #invContainer h3{
@@ -94,6 +92,7 @@ header p{
 	font-family: 		'Roboto Slab', serif;
 	font-size: 			1.5em;
 	text-align: 		center;
+	text-shadow: 		0px 0px 3px #fff;
 }
 
 .label p:first-child{
@@ -128,7 +127,7 @@ a{
 	text-decoration:	none;
 	text-transform:	uppercase;
 	font-weight: 		500;
-	color: 				#238D83;
+	color: 				#00A8A4;
 }
 
 a:hover {
@@ -136,8 +135,6 @@ a:hover {
 	text-transform:	uppercase;
 	box-sizing: 		border-box;
 	font-weight: 		500;
-	//color: 				#362B3C;
-	//background-color: #FCC457;
 	padding: 			5px 0px;
 }
 

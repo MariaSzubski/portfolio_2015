@@ -345,7 +345,13 @@ img[src*="03"]{
 }
 
 .endSummary div:last-of-type a:hover{
-		border-color: #E3A730;
+	border-color: #E3A730;
+	background-color: #fcc457;
+	color: #362B3C;
+	padding: 12px 32px;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: border-color .3s ease, background-color .3s ease, color .3s ease;
 }
 
 @media (max-width: 1024px) {
@@ -355,7 +361,7 @@ img[src*="03"]{
 	}
 
 	.endSummary div:last-of-type a{
-		margin: 6px 0px;
+		margin: 6px 0px !important;
 	}
 }
 

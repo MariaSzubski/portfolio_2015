@@ -13,7 +13,7 @@
 		Dark Gray: 		#362B3C
 		Medium Gray:	#58504E
 		Dark Brown: 	#75685E
-		Aqua:				#238D83
+		Aqua:				#12a8a5
 		BG Lines:		url('../img/bg.png')
 		Box Shadow: 	0px 0px 5px rgba(0,0,0,.5)
 
@@ -35,8 +35,8 @@ header{
 	flex-flow: column;
 	align-items: center;
 	padding: 72px 36px;
-	//background-color: rgba(252, 196, 87, 0.2);
-	background-image: url('../img/bg_3.png');
+	//background-color: rgba(163, 182, 3, 0.25);
+	background-image: url('../img/bg.png');
 }
 
 
@@ -45,8 +45,7 @@ header > img{
 	height:288px;
 	border-radius: 144px;
 	border: 6px solid 	#ffffff;
-
-	//box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
+	box-shadow: 0px 0px 8px rgba(54, 43, 59, 0.25);
 }
 
 #social{
@@ -259,13 +258,13 @@ header > img{
 
 #experience{
 	padding: 0px 72px 72px 72px;
-	background-color: rgba(117, 104, 94, 0.15);
+	background-color: rgba(218, 219, 209, .6);
 	border-top: 4px solid #362B3C;
 	display:flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../img/bg.png')
+	background-image: url('../img/bg_3.png')
 }
 
 #expContainer{
@@ -289,7 +288,6 @@ header > img{
 	padding: 18px 30px;
 	background-color: #fff;
 	border: 1px solid #999;
-	//border-top: 2px solid #362B3C;
 	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 
@@ -380,6 +378,7 @@ header > img{
 	align-items: flex-start;
 	justify-content: flex-start;
 	text-align: left;
+	color: #362B3B !important;
 }
 
 .design, .interest{
@@ -428,8 +427,8 @@ header > img{
 
 #involveRec{
 		border-top: 4px solid #362B3C;
-		//background-color: #BEBEBF;
-		background-image: url('../img/bg_1.png');
+		background-color: rgba(218, 219, 209, .6);
+		background-image: url('../img/bg_3.png');
 		padding: 0px 36px 72px 36px;
 }
 

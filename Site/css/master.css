@@ -40,26 +40,24 @@ ul{
 
 
 nav{
-	background-color: #fff;
-	//background-image: url(../img/bg.png);
+	//background-color: 	#3E5053;
+	background-image: url(../img/bg_3.png);
 	position: relative;
 	z-index: 9999;
 	width: 100%;
-	//border-bottom: 4px solid #362B3C;
-	box-shadow: 0px 0px 7px rgba(0,0,0,.5);
-		box-sizing: border-box;
+	//box-shadow: 0px 0px 7px rgba(0,0,0,.5);
+	box-sizing: border-box;
 }
 
 nav li{
-	//background-color: #fff;
 	transition: background-color .4s;
 	text-align: center;
-		box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 nav li:first-child{
 	display: none;
-		box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 nav a{
@@ -67,14 +65,14 @@ nav a{
 	padding: 15px 18px 14px 18px;
 	box-sizing: border-box;
 	padding: 12px 32px;
-	text-transform: capitalize;
+	//text-transform: capitalize;
 	text-decoration: none;
 	font-weight: 400;
 }
 
 nav li:hover{
 	box-sizing: border-box;
-	background-color: #FCC457;
+	background-color: rgba(252, 196, 87, 0.7);
 	color: #362B3C !important;
 	transition: background-color .3s ease;
 }
@@ -134,8 +132,8 @@ nav li:hover a{
 
 header > a{
 	background-color: #ffffff;
-	border: 2px solid #238D83;
-	color: #238D83;
+	border: 2px solid #00A8A4;
+	color: #00A8A4;
 	padding: 12px 32px;
 	border-radius: 5px;
 	cursor: pointer;
