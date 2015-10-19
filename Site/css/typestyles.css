@@ -4,6 +4,7 @@ COLORS
 	Yellow:	 	#E3A730,  #fcc457
 	Dark Gray: 	#362B3C
 	Dark Brown: #75685E
+	Green: 		#2B8F83
 
 */
 
@@ -71,24 +72,20 @@ h4, #invContainer h3{
 }
 
 h5{
-	font-family: 		'Roboto Condensed', serif;
-	font-size: 			1.25em;
-	text-align: 		center;
+
+	font-size: 			1.125em;
+	text-align: 		left;
 	color:				#362B3C;
 }
 
 h6{
 	font-size: 			1em;
-	margin-top: 		6px;
+	margin-top: 		8px;
 	display: 			flex;
 	color:				#362B3C;
 }
 
-h6 img{
-	height: 				18px;
-	width: 				18px;
-	margin-right: 		4px;
-}
+
 
 
 
@@ -137,7 +134,7 @@ a{
 	text-decoration:	none;
 	text-transform:	uppercase;
 	font-weight: 		400;
-	color: 				#00A8A4;
+	color: 				#2B8F83;
 }
 
 a:hover {

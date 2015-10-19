@@ -29,7 +29,6 @@
 
 /*                                     Intro  */
 
-
 nav{
 	//background-color: 	#3E5053;
 	background-image: url(../img/bg_3.png);
@@ -366,6 +365,10 @@ header > img{
 	max-width: 960px;
 }
 
+#expContainer svg{
+	margin-right: 8px;
+}
+
 #expContainer article{
 	box-sizing: border-box;
 	position: relative;
@@ -394,18 +397,17 @@ header > img{
 	min-width: 144px;
 	display:flex;
 	flex-flow: column;
-	align-items: center;
+	align-items: flex-start;
 }
 
 
 @media handheld, (max-width: 48em), (-webkit-device-pixel-ratio:3) {
 
 	#experience{
-		padding: 0px 36px 72px 36px;
+		padding: 0px 20px 72px 20px;
 	}
 
 	#expContainer article{
-		display:flex;
 		flex-flow: column;
 		align-items: flex-start;
 		justify-content: flex-start;
@@ -414,21 +416,36 @@ header > img{
 	#expContainer article div:first-child{
 		padding: 18px 0px;
 		border-right: 0px;
+		width: 100%;
+	}
+
+	#expContainer h3{
+		padding-bottom:8px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	#expContainer h4{
+		padding-bottom: 0px;
+		padding-top: 8px;
 	}
 
 	#expContainer article div:last-child{
-		padding-left: 0px;
+		padding: 0px;
 		display:flex;
 		text-align: left;
-		flex-flow: column;
-		align-items: flex-start;
+		flex-flow: row;
+		align-items: center;
 		justify-content: flex-start;
+		min-width: 100%;
 	}
-
-	h6{
-		margin-top: 		6px;
+	#expContainer h5, #expContainer h6{
+		font-size: 1em;
+		margin-top: 0px;
+		width: auto;
+		margin-right: 18px;
 	}
 }
+
 
 /*                                     About Me */
 #aboutMe{
