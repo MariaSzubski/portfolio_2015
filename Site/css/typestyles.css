@@ -26,7 +26,7 @@ h1{
 	color:				#362B3C;
 	text-transform: 	uppercase;
 	text-align: 		center;
-	padding: 			36px;
+	padding: 			36px 0px;
 }
 
 header h1{
@@ -43,6 +43,8 @@ header h1{
 .final h1, #aboutMe h1, #workSamples h1{
 	color: #FCC457;
 }
+
+
 
 
 
@@ -72,7 +74,6 @@ h4, #invContainer h3{
 }
 
 h5{
-
 	font-size: 			1.125em;
 	text-align: 		left;
 	color:				#362B3C;
@@ -178,4 +179,30 @@ header a, form input[type="submit"]{
 	font-weight:		300;
 	text-transform:	capitalize;
 	font-size: 			1.25em;
+}
+
+
+
+@media handheld, (max-width: 48em), (-webkit-device-pixel-ratio:3) {
+	h1{
+		font-size: 			3em;
+		padding: 			1em 0px;
+	}
+
+	header h1{
+		font-size: 			2.2em;
+	}
+
+	h2{
+		font-size: 			1.25em;
+	}
+
+
+	h3{
+		font-size: 			1em;
+	}
+
+	header p{
+		font-size: 			1.25em;
+	}
 }
