@@ -162,26 +162,50 @@ section{
 }
 
 /*                                    Work Sample: About Section */
-#detail_about{
+.detail_about{
 	box-sizing: border-box;
 	display: flex;
 	flex-flow: row wrap;
+	background-image: url('../img/bg_3.png');
 }
 
-#detail_about h1{
+.detail_about h1{
 	flex-basis:100%;
 }
 
-#detail_about div{
+.detail_about div{
 	flex: 1;
 	margin: 0px 24px;
 	justify-content: center;
-
 }
 
-#detail_about p{
-	font-size: 1.3em;
+.detail_about .skills{
+	border: 2px solid #362B3C;
+	//box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+	padding: 36px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+
+.detail_about #purpose{
+	flex:2;
+}
+
+.detail_about.long{
+	flex-flow: column;
+	align-items: center;
+	background-image: url('../img/bg_3.png');
+}
+
+.detail_about.long div{
+	max-width: 792px;
+	margin: 24px 0px;
+}
+
+.detail_about p{
+	font-size: 1.25em;
 	font-family: 'Roboto Slab', serif;
+	color:#362B3C;
 }
 
 @media (max-width: 768px){
@@ -191,14 +215,15 @@ section{
 		padding: 0px 24px 72px 24px;
 	}
 
-	#detail_about{
+	.detail_about{
 		flex-flow: column;
 	}
 
-	#detail_about div{
+	.detail_about div{
 		flex: 1;
 		margin: 24px 0px;
 	}
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -208,11 +233,11 @@ section{
 		padding: 0px 72px 72px 72px;
 	}
 
-	#detail_about{
+	.detail_about{
 		flex-flow: column;
 	}
 
-	#detail_about div{
+	.detail_about div{
 		flex: 1;
 		margin: 24px 0px;
 	}

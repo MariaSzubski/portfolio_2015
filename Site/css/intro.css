@@ -425,7 +425,7 @@ header > img{
 		flex-flow: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		padding: 30px;
+		padding: 18px;
 		margin: 3px 4px;
 	}
 
@@ -617,7 +617,7 @@ header > img{
 
 
 
-.layer1 img	{
+.layer1 img, .layer1 svg	{
 	position:absolute;
 	top: 32px;
 	left: 30px;
@@ -674,6 +674,8 @@ header > img{
 		min-width: 0px;
 		height:auto;
 		margin: 3px 0px;
+		padding: 18px;
+		padding-left: 48px;
 	}
 
 	#invContainer img:first-child	{
@@ -683,17 +685,25 @@ header > img{
 	.layer1{
 		padding-bottom:6px;
 		border-bottom: 1px solid #eaeaea;
+		top: 18px;
+		left: 48px;
+		right: 18px;
 	}
 
-	.layer1 h3, .layer1 h4, .dotDivider{
-		display: inline-block;
+	.layer1 img, .layer1 svg	{
+		position:absolute;
+		top:18px;
+		left: 18px;
 	}
 
 	.layer2{
 		opacity:1;
 		position:static;
-		padding-left: 30px;
-		margin-top:12px;
+		padding-left: 18px;
+		margin-top:18px;
+		top: 18px;
+		left: 48px;
+		right: 18px;
 	}
 
 	#invContainer article:hover {

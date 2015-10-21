@@ -49,7 +49,7 @@ header h1{
 
 
 h2{
-	font-size: 			1.375em;
+	font-size: 			1.55em;
 	font-weight: 		500;
 	color:				#362B3C;
 }
@@ -62,26 +62,26 @@ h2{
 h3{
 	font-size: 			1.25em;
 	font-weight: 		300;
-	margin-top: 		6px;
+	margin-top: 		8px;
 	color:				#362B3C;
 }
 
 h4, #invContainer h3{
 	font-family:		'Roboto', serif;
-	font-size: 			1em;
-	margin-top: 		6px;
+	font-size: 			1.05em;
+	margin-top: 	10px;
 	color:				#362B3C;
 }
 
 h5{
-	font-size: 			1.125em;
+	font-size: 			1.05em;
 	text-align: 		left;
 	color:				#362B3C;
 }
 
 h6{
-	font-size: 			1em;
-	margin-top: 		8px;
+	font-size: 			1.05em;
+	margin-top: 		16px;
 	display: 			flex;
 	color:				#362B3C;
 }
@@ -194,14 +194,37 @@ header a, form input[type="submit"]{
 	}
 
 	h2{
-		font-size: 			1.25em;
+		font-size: 			1.15em;
 	}
 
 
 	h3{
-		font-size: 			1em;
+		font-size: 			.9em !important;
+		font-weight: 		400;
+		margin-top: 		4px;
 	}
 
+	h4, h5, h6, #invContainer h3{
+		font-size: 			.9em !important;
+		line-height: 		140%;
+		font-weight: 		300;
+	}
+
+
+	#invContainer p {
+		font-size: 			.9em;
+			margin-left:		-18px;
+	}
+
+	#invContainer h3{
+		font-weight: 		400;
+		margin-top: 6px;
+	}
+
+#invContainer h4 {
+		font-weight: 		400;
+		margin-top: 0px;
+	}
 	header p{
 		font-size: 			1.25em;
 	}
