@@ -17,7 +17,6 @@ COLORS
 	color: 				#3E5053;
 }
 
-
 /*                                     Headers */
 h1{
 	font-family: 		'Roboto Condensed', sans-serif;
@@ -44,10 +43,6 @@ header h1{
 	color: #FCC457;
 }
 
-
-
-
-
 h2{
 	font-size: 			1.55em;
 	font-weight: 		500;
@@ -58,18 +53,18 @@ h2{
 	font-size: 			1.125em;
 }
 
-
 h3{
 	font-size: 			1.25em;
 	font-weight: 		300;
-	margin-top: 		8px;
+	margin-top: 		6px;
 	color:				#362B3C;
 }
 
 h4, #invContainer h3{
 	font-family:		'Roboto', serif;
 	font-size: 			1.05em;
-	margin-top: 	10px;
+	line-height: 		140%;
+	margin-top: 		8px;
 	color:				#362B3C;
 }
 
@@ -81,17 +76,14 @@ h5{
 
 h6{
 	font-size: 			1.05em;
-	margin-top: 		16px;
+	margin-top: 		12px;
 	display: 			flex;
 	color:				#362B3C;
 }
 
 
-
-
-
-
 /*                                     Copy */
+
 header p{
 	font-family: 		'Roboto Slab', serif;
 	font-size: 			1.5em;
@@ -129,7 +121,6 @@ form input, form textarea{
 
 
 /*                                     Links  */
-
 
 a{
 	text-decoration:	none;
@@ -172,8 +163,6 @@ nav li:hover a, nav li:hover span, nav span{
 	transition: color .2s ease;
 	text-decoration: none;
 }
-
-
 header a, form input[type="submit"]{
 	font-family: 		'Roboto', sans-serif;
 	font-weight:		300;
@@ -181,9 +170,8 @@ header a, form input[type="submit"]{
 	font-size: 			1.25em;
 }
 
-
-
 @media handheld, (max-width: 48em), (-webkit-device-pixel-ratio:3) {
+
 	h1{
 		font-size: 			3em;
 		padding: 			1em 0px;
@@ -197,7 +185,6 @@ header a, form input[type="submit"]{
 		font-size: 			1.15em;
 	}
 
-
 	h3{
 		font-size: 			.9em !important;
 		font-weight: 		400;
@@ -208,12 +195,12 @@ header a, form input[type="submit"]{
 		font-size: 			.9em !important;
 		line-height: 		140%;
 		font-weight: 		300;
+		margin-top: 		10px;
 	}
-
 
 	#invContainer p {
 		font-size: 			.9em;
-			margin-left:		-18px;
+		margin-left:		-18px;
 	}
 
 	#invContainer h3{
@@ -221,11 +208,13 @@ header a, form input[type="submit"]{
 		margin-top: 6px;
 	}
 
-#invContainer h4 {
-		font-weight: 		400;
-		margin-top: 0px;
-	}
+	#invContainer h4 {
+			font-weight: 		400;
+			margin-top: 0px;
+		}
+
 	header p{
 		font-size: 			1.25em;
 	}
+
 }

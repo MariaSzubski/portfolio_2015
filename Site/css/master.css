@@ -38,8 +38,6 @@ ul{
 	text-align: center;
 }
 
-
-
 header > a{
 	background-color: #ffffff;
 	border: 2px solid #2B8F83;
@@ -48,7 +46,9 @@ header > a{
 	border-radius: 5px;
 	cursor: pointer;
 	font-weight: 400;
-	transition: border-color .3s ease, background-color .3s ease, color .3s ease;
+	transition: border-color .3s ease,
+					background-color .3s ease,
+					color .3s ease;
 }
 
 header > a:hover{
@@ -59,14 +59,14 @@ header > a:hover{
 	text-transform: capitalize;
 	text-decoration: none;
 	font-weight: 400;
-	transition: border-color .3s ease, background-color .3s ease, color .3s ease;
+	transition: border-color .3s ease,
+					background-color .3s ease,
+					color .3s ease;
 }
 
 section{
 	padding-bottom: 36px;
 }
-
-
 
 
 /*                                     Footer */
@@ -127,40 +127,9 @@ footer h1{
 	padding-top: 36px;
 }
 
-/*
-	form{
-		flex: 1;
-		display: flex;
-		flex-flow: column;
-		padding-right: 12px;
-	}
-
-	form input, form textarea{
-		height:48px;
-		box-sizing: border-box;
-		margin-bottom: 6px;
-		padding: 0px 12px;
-		border: 0px solid #362B3C;
-		border-radius: 5px;
-	}
-
-	form textarea{
-		height: 144px;
-		padding: 12px 12px;
-	}
-
-	#twitter{
-		flex: 1;
-	}
-
-	#twitter a{
-		background-color: #75685E;
-	}
-*/
-
-
 
 @media handheld, (max-width: 48em), (-webkit-device-pixel-ratio:3){
+
 	footer{
 		flex-flow: column;
 		padding: 0px 24px 36px 24px;
@@ -189,13 +158,4 @@ footer h1{
 		margin-bottom: 4px;
 	}
 
-
-	/*
-		form{
-			padding-right: 0px;
-		}
-		footer form, #twitter{
-			display:none;
-		}
-	*/
 }

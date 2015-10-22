@@ -31,7 +31,6 @@ html, body{
 	height: 100%;
 }
 
-
 nav{
 	position: absolute;
 	width: 100%;
@@ -87,6 +86,7 @@ nav li:hover span{
 }
 
 @media (max-width:48em) {
+
 	nav span{
 		display: none;
 	}
@@ -94,12 +94,12 @@ nav li:hover span{
 		margin-left: .75em;
 		padding: .75em;
 	}
+
 }
 
 
-
-
 /*                                    Work Sample: Header */
+
 header{
 	position: relative;
 	display: flex;
@@ -153,12 +153,11 @@ header img{
 	filter: blur(11px);
 }
 
-
 /*                                    Work Sample: Sections */
 section{
-		box-sizing: border-box;
-		border-top: 4px solid #362B3C;
-		padding: 0px 96px 156px 96px;
+	box-sizing: border-box;
+	border-top: 4px solid #362B3C;
+	padding: 0px 96px 156px 96px;
 }
 
 /*                                    Work Sample: About Section */
@@ -181,7 +180,6 @@ section{
 
 .detail_about .skills{
 	border: 2px solid #362B3C;
-	//box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 	padding: 36px;
 	box-sizing: border-box;
 	background-color: #fff;
@@ -209,6 +207,7 @@ section{
 }
 
 @media (max-width: 768px){
+
 	section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
@@ -227,6 +226,7 @@ section{
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
 	section{
 		box-sizing: border-box;
 		border-top: 4px solid #362B3C;
@@ -241,6 +241,7 @@ section{
 		flex: 1;
 		margin: 24px 0px;
 	}
+
 }
 
 section p{
@@ -249,8 +250,8 @@ section p{
 	font-family: 'Roboto Slab', serif;
 }
 
-
 /*                                    Work Sample: Gallery Section */
+
 .gallery {
 	display: flex;
 	flex-flow: row wrap;
@@ -264,19 +265,21 @@ section p{
 .gallery img{
 	box-sizing: border-box;
 	display: block;
-
 	border: 2px solid #362B3C;
 	height: 288px;
 	object-fit: cover;
 	margin:6px;
 
 }
+
 img[src*="01"], img[src*="02"], img[src*="04"], img[src*="05"], img[src*="06"], img[src*="07"]{
 	flex: 1 0 20%;
 }
+
 img[src*="03"]{
 	flex: 2 0 30%;
 }
+
 
 /*                                   Work Sample: Slides Section */
 
@@ -303,7 +306,6 @@ img[src*="03"]{
 	width: 38%;
 }
 
-
 .slides > .fotorama{
 	flex-basis: 100%;
 }
@@ -312,6 +314,7 @@ img[src*="03"]{
 	order: 2;
 	margin-top: 48px;
 }
+
 .video > div:last-of-type{
 	order: 1;
 }
@@ -332,8 +335,8 @@ img[src*="03"]{
 	order: 1;
 }
 
-
 @media (max-width: 1024px){
+
 	.slides > .fotorama{
 		max-width: 100%;
 	}
@@ -358,10 +361,11 @@ img[src*="03"]{
 	.slides.reverse > div:last-of-type{
 		order: 2;
 	}
+
 }
 
-
 @media (min-width: 1025px) and (max-width: 1680px){
+
 	.slides > .fotorama{
 		max-width: 62%;
 	}
@@ -377,9 +381,11 @@ img[src*="03"]{
 		margin-left: 0%;
 		margin-right: 4%;
 	}
+
 }
 
 @media (min-width: 1681px){
+
 	.slides > .fotorama{
 		max-width: 64%;
 	}
@@ -394,8 +400,8 @@ img[src*="03"]{
 		margin-left: 0%;
 		margin-right: 4%;
 	}
-}
 
+}
 
 /*                                    Work Sample: End Summary */
 
@@ -414,10 +420,9 @@ img[src*="03"]{
 }
 
 .endSummary p, .endSummary a{
-		text-align: center;
-		font-size: 1.3em;
+	text-align: center;
+	font-size: 1.3em;
 }
-
 
 .endSummary div:last-of-type a.button{
 	background-color: #362B3C;
@@ -441,7 +446,9 @@ img[src*="03"]{
 	padding: 12px 32px;
 	text-transform: capitalize;
 	text-decoration: none;
-	transition: border-color .3s ease, background-color .3s ease, color .3s ease;
+	transition: border-color .3s ease,
+					background-color .3s ease,
+					color .3s ease;
 }
 
 @media (max-width: 1024px) {
@@ -453,9 +460,8 @@ img[src*="03"]{
 	.endSummary div:last-of-type a{
 		margin: 6px 0px !important;
 	}
+
 }
-
-
 
 
 /*                                  	Work Sample: Final Section */
@@ -463,11 +469,9 @@ img[src*="03"]{
 	background-color: #362B3C;
 }
 
-
 .final div * {
 	color: #fff;
 }
-
 
 
 /*                                    Gists */
@@ -491,6 +495,7 @@ img[src*="03"]{
  }
 
 @media (max-width:1024px){
+
 	.gist_container{
 		display: flex;
 		flex-flow: column;
@@ -506,16 +511,14 @@ img[src*="03"]{
 		flex: 1;
 		margin-bottom: 36px;
 		order: 1;
-	 }
+	}
+
 }
-
-
 
 *.gist *{
     font-family: monospace;
 	 font-weight: 500;
 	 font-size: 1em !important;
-
 }
 
 .gist, .gist-file, .gist-data, .js-gist-file-update-container, .js-task-list-container, .file-box{
