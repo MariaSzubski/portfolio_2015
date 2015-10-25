@@ -200,7 +200,16 @@ section{
 	margin: 24px 0px;
 }
 
-.detail_about p{
+.skills ul, .detail_about ul{
+	flex-flow: column;
+	align-items: flex-start;
+	list-style-type: circle;
+	list-style-position: inside;
+	line-height: 200%;
+	margin-top: 6px;
+}
+
+.detail_about p, .detail_about li {
 	font-size: 1.25em;
 	font-family: 'Roboto Slab', serif;
 	color:#362B3C;
