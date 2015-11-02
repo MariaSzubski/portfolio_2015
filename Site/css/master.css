@@ -30,12 +30,8 @@
 
 ul{
 	list-style-type: none;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items:center;
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 }
 
 section{
