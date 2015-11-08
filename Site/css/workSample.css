@@ -166,11 +166,7 @@ header h2{
 	left:0px;
 }
 
-@media handheld, (max-width:48em){
-	.imagebg{
-		display: none;
-	}
-}
+
 
 
 header img{
@@ -186,6 +182,12 @@ header img{
 	filter: blur(8px);
 }
 
+@media handheld, (max-width:48em){
+	.imagebg{
+		display: none;
+	}
+
+}
 
 
 /*                                    Work Sample: About Section */
@@ -250,7 +252,7 @@ header img{
 	border: 2px solid #362B3C;
 	height: 324px;
 	object-fit: cover;
-	object-position:center;
+	object-position: center;
 	margin:6px;
 	min-width: 228px;
 
@@ -266,17 +268,16 @@ header img{
 	margin-bottom: 36px;
 }
 
-img[src*="01"],
-img[src*="02"],
-img[src*="04"],
-img[src*="05"],
-img[src*="06"],
-img[src*="07"]{
+.gallery img{
 	flex: 1 0 20%;
 }
 
-img[src*="03"]{
-	flex: 2 0 30%;
+#research_insight img{
+	object-position: top !important;
+}
+
+#research_insight img[src*="06"]{
+	object-position: left top !important;
 }
 
 #research_ikea img[src*="01"],
@@ -288,6 +289,7 @@ img[src*="03"]{
 #research_ikea img[src*="10"]{
 	flex: 1 0 10%;
 }
+
 #research_ikea img[src*="02"],
 #research_ikea img[src*="08"],
 #research_ikea img[src*="09"],
@@ -295,14 +297,37 @@ img[src*="03"]{
 	flex: 1 0 30%;
 }
 
+#research_uw img{
+	flex: 1 0 10%;
+	object-position: top;
+}
 
-@media (min-width: 48.0625em) and (max-width: 64em) {
+@media (min-width: 105.0625em){
+	#research_insight img, #research_uw img{
+		height: 400px !important;
+		flex: 1 0 10%;
+	}
+}
+
+@media (min-width: 48.0625em) and (max-width: 105em) {
 
 	.gallery img{
 		min-width: 191px;
-
+		height: 280px;
 	}
 
+	#research_insight img{
+		object-position: center !important;
+	}
+
+	#research_insight img[src*="05"],
+	#research_insight img[src*="06"]{
+		flex: 2 0 42% !important;
+	}
+
+	#research_insight img[src*="06"]{
+		object-position: left top!important;
+	}
 
 	#research_ikea img[src*="01"],
 	#research_ikea img[src*="03"],
@@ -317,14 +342,24 @@ img[src*="03"]{
 	#research_ikea img[src*="08"],
 	#research_ikea img[src*="09"],
 	#research_ikea img[src*="11"]{
-		flex: 1 0 50% !important;
+		flex: 1 0 30% !important;
+	}
+
+}
+
+@media handheld, (max-width:90em){
+	#research_uw img{
+		object-position: top !important;
+	}
+	#research_uw img[src*="05"]{
+		object-position: center !important;
 	}
 }
 
 @media handheld, (max-width: 48em){
 
 
-	#research_ikea img{
+	.gallery img{
 		flex: 1 0 46% !important;
 		min-width: 50px;
 		height: 180px !important;
@@ -332,33 +367,43 @@ img[src*="03"]{
 		padding: 0px;
 	}
 
-	#research_ikea img[src*="02"],
-	#research_ikea img[src*="04"],
-	#research_ikea img[src*="06"],
-	#research_ikea img[src*="08"],
-	#research_ikea img[src*="10"]{
+	#research_insight img{
+		height: 280px !important;
+		object-position: center !important;
+	}
+
+	#research_insight img[src*="05"],
+	#research_insight img[src*="06"]{
+		object-position: left top!important;
+	}
+
+	.gallery img[src*="02"],
+	.gallery img[src*="04"],
+	.gallery img[src*="06"],
+	.gallery img[src*="08"],
+	.gallery img[src*="10"]{
 		border-left:1px solid #fff;
 		border-right:2px solid #fff;
 		border-bottom:1px solid #fff;
 		border-top:1px solid #fff;
 	}
 
-	#research_ikea img[src*="01"],
-	#research_ikea img[src*="03"],
-	#research_ikea img[src*="05"],
-	#research_ikea img[src*="07"],
-	#research_ikea img[src*="09"]{
+	.gallery img[src*="01"],
+	.gallery img[src*="03"],
+	.gallery img[src*="05"],
+	.gallery img[src*="07"],
+	.gallery img[src*="09"]{
 		border-left:2px solid #fff;
 		border-right:1px solid #fff;
 		border-bottom: 1px solid #fff;
 		border-top:1px solid #fff;
 	}
-	#research_ikea img[src*="01"],
-	#research_ikea img[src*="02"]{
+	.gallery img[src*="01"],
+	.gallery img[src*="02"]{
 		border-top:2px solid #fff;
 	}
 
-	#research_ikea img[src*="11"]{
+	.gallery img:last-of-type{
 		border-top:1px solid #fff;
 		border-left:2px solid #fff;
 		border-right:2px solid #fff;
@@ -386,16 +431,18 @@ img[src*="03"]{
 	flex-basis: 100%;
 }
 
-.slides > div:last-of-type{
+.desc{
 	line-height: 150%;
 	order: 2;
 	margin-left: 4%;
 	max-width: 792px;
 }
 
-.slides > div:last-of-type div{
-	margin-bottom: 36px;
+.jcp{
+	align-items: center;
+	justify-content: center;
 }
+
 
 .video {
 	display: flex;
@@ -431,8 +478,7 @@ img[src*="03"]{
 		order: 1;
 	}
 
-	.slides > div:last-of-type{
-
+	.desc{
 		margin:24px 0px 0px 0px;
 		width:100%;
 		order: 2;
@@ -459,7 +505,7 @@ img[src*="03"]{
 		max-width: 58%;
 	}
 
-	.slides > div:last-of-type{
+	.desc{
 		margin-left: 4%;
 		margin-right: 0%;
 		margin-top: 0px;
@@ -481,7 +527,7 @@ img[src*="03"]{
 		max-width: 64%;
 	}
 
-	.slides > div:last-of-type{
+	.desc{
 		margin-left: 4%;
 		margin-right:0%;
 		margin-top: 0px;
@@ -497,6 +543,11 @@ img[src*="03"]{
 
 }
 
+.jcp > .fotorama{
+	height:85% !important;
+	width:  50	% !important;
+}
+
 /*                                    Work Sample: End Summary */
 
 .endSummary{
@@ -504,6 +555,7 @@ img[src*="03"]{
 	flex-flow: column;
 	align-items: center;
 	background-position: center;
+	order: 2;
 }
 
 .endSummary > div{
@@ -518,6 +570,10 @@ img[src*="03"]{
 	margin: 24px 0px;
 }
 
+.endSummary.links{
+	flex-flow: row;
+}
+
 .endSummary.links a.button{
 	background-color: #362B3C;
 	border: 2px solid rgba(255, 255, 255, 0.5) ;
@@ -526,7 +582,6 @@ img[src*="03"]{
 	cursor: pointer;
 	margin: 0px 6px;
 	margin-top: 12px;
-	margin-bottom: 36px;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -550,7 +605,22 @@ img[src*="03"]{
 @media handheld, (max-width: 64em) {
 
 	.endSummary div{
+		display: flex;
 		flex-flow: column;
+	}
+
+	.endSummary.links{
+		display: flex;
+		flex-flow: column;
+		box-sizing: border-box;
+		padding-left: .9em;
+		padding-right: .9em;
+		padding-top: 1.5em;
+	}
+
+	.endSummary.links a{
+		width: 100%;
+		box-sizing: border-box;
 	}
 
 	.endSummary div:last-of-type a{
