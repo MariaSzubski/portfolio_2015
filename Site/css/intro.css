@@ -49,11 +49,11 @@ header h1 {
 }
 
 header > img{
-	width:288px;
-	height:288px;
-	border-radius: 144px;
-	border: 6px solid #ffffff;
-	box-shadow: 0px 0px 8px rgba(54, 43, 59, 0.25);
+	width:				288px;
+	height:				288px;
+	border-radius: 	144px;
+	border:				6px solid #ffffff;
+	box-shadow: 		0px 0px 8px rgba(54, 43, 59, 0.25);
 }
 
 header p {
@@ -64,6 +64,21 @@ header p {
 }
 
 @media handheld, (max-width: 48em){
+	header{
+		display:flex;
+		flex-flow: column;
+		align-items: center;
+		padding: 4.5em 1.5em;
+		background-image: url('../img/bg.png');
+	}
+
+	header h1{
+		font-size: 2em;
+	}
+
+	header p {
+		font-size: 			1.25em;
+	}
 
 	header > img{
 		width:50%;
@@ -74,6 +89,8 @@ header p {
 	}
 
 }
+
+
 #social{
 	margin-top: 12px;
 	margin-bottom: 12px;
@@ -313,7 +330,7 @@ ul#social{
 	max-width: 960px;
 }
 
-#expContainer svg{
+#expContainer img{
 	margin-right: 8px;
 }
 
@@ -381,11 +398,12 @@ ul#social{
 	#expContainer h3{
 		padding-bottom:8px;
 		border-bottom: 1px solid #eaeaea;
+		line-height: 145%;
 	}
 
 	#expContainer h4{
 		padding-bottom: 0px;
-		padding-top: 8px;
+		padding-top: 4px;
 	}
 
 	#expContainer article div:last-child{
@@ -399,7 +417,7 @@ ul#social{
 	}
 	#expContainer h5, #expContainer h6{
 		font-size: .875em;
-		margin-top: 1.5em;
+		margin-top: 1em;
 		margin-right: 18px;
 		display: flex;
 		flex: 1;
@@ -457,11 +475,12 @@ ul#social{
 
 
 
-@media (min-width: 48.0625em) and (max-width: 64em){
+@media (min-width:48em) and (max-width: 64em){
 
 	#aboutMe{
 		flex-flow: column;
 		padding: 0px 72px 72px 72px;
+		align-items: center;
 	}
 
 	#aboutMe > div:last-of-type{
@@ -488,6 +507,7 @@ ul#social{
 	#aboutMe{
 		flex-flow: column;
 		padding: 0px 1.5em 4.5em 1.5em;
+		align-items: center;
 	}
 
 	#aboutMe > div:last-of-type{
@@ -504,7 +524,7 @@ ul#social{
 	}
 
 	#aboutMe > div:first-of-type{
-		padding-bottom: 2.25em;
+		padding-bottom: 0em;
 		margin-right: 0em;
 		font-size: 1.1em;
 		flex-flow: column;
@@ -589,7 +609,7 @@ ul#social{
 }
 
 
-@media handheld, (max-width:775px){
+@media handheld, (max-width:48.4375em){
 
 	#involveRec{
 		padding: 0px .3em 72px .3em;
@@ -609,7 +629,7 @@ ul#social{
 	}
 
 	.layer1{
-		padding-bottom:6px;
+		padding-bottom:8px;
 		border-bottom: 1px solid #eaeaea;
 		top: 18px;
 		left: 48px;
@@ -626,7 +646,7 @@ ul#social{
 		opacity:1;
 		position:static;
 		padding-left: 18px;
-		margin-top:18px;
+		margin-top:12px;
 		top: 18px;
 		left: 48px;
 		right: 18px;

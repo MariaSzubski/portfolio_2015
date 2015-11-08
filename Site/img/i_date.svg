@@ -1,0 +1,24 @@
+<svg	version="1.1" xmlns="http://www.w3.org/2000/svg"
+	width="16px" height="16px" viewBox="0 0 16 16">
+	<g>
+		<path fill="#F3695A" d="M15,3v11H2V3H15 M16,2H1v13h15V2L16,2z"/>
+		<rect x="6" y="7" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="4" fill="#F3695A" width="1" height="2"/>
+		<rect x="12" fill="#F3695A" width="1" height="2"/>
+		<rect x="8" y="7" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="6" y="9" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="8" y="9" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="6" y="11" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="8" y="11" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="12" y="7" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="12" y="9" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="12" y="11" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="4" y="7" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="4" y="9" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="4" y="11" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="10" y="7" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="10" y="9" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="10" y="11" fill="#F9B4AC" width="1" height="1"/>
+		<rect x="2" y="3" fill="#F9B4AC" width="13" height="2"/>
+	</g>
+</svg>

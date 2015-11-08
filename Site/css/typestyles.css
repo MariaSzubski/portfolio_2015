@@ -71,8 +71,6 @@ header h1 {
 	color: 				#FCC457;
 }
 
-
-
 footer h1{
 	flex-basis: 		100%;
 	padding: 			36px 0px;
@@ -84,7 +82,7 @@ h2 {
 	font-size: 			1.55em;
 	font-weight: 		500;
 	color:				#362B3C;
-	margin-bottom: 	12px;
+	margin-bottom: 	8px;
 }
 
 #invContainer h2 {
@@ -246,7 +244,7 @@ a:hover {
 
 }
 
-header > a {
+header > a, .links > a.button {
 	font-weight: 		400;
 	font-size: 			1.35em;
 	text-decoration: 	none;
@@ -260,7 +258,7 @@ header > a {
 							color .3s ease;
 }
 
-header > a:hover {
+header > a:hover, .links > a.button:hover {
 	text-decoration: 	none;
 	color: 				#362B3C;
 	border-color: 		#E3A730;
@@ -283,43 +281,53 @@ footer a {
 @media handheld, (max-width: 48em){
 
 	h1{
-		font-size: 			3em;
-		padding: 			1em 0px;
+		font-size: 			2.65em !important;
+		padding: 			.6em .6em .4em .6em !important;
 	}
 
 	header h1{
-		font-size: 			2.2em;
+		font-size: 			2.2em !important;
 	}
 
 	h2{
-		font-size: 			1.15em;
+		font-size: 			1.15em !important;
+		margin-bottom:		6px;
 	}
 
 	h3{
 		font-size: 			.9em !important;
-		font-weight: 		400;
-		margin-top: 		4px !important;
+		font-weight: 		400 !important;
+		margin-top: 		2px !important;
 	}
 
 	h4, h5, h6{
 		font-size: 			.9em !important;
-		line-height: 		140%;
-		font-weight: 		300;
-		margin-top: 		10px;
+		line-height: 		140% !important;
+		font-weight: 		300 !important;
+	}
+
+	h4{
+		margin-top: 		8px !important;
+	}
+
+	p, li{
+		font-size: 			1em !important;
 	}
 
 	#invContainer h4 {
-		font-weight: 		400;
-		margin-top: 		0px;
+		font-weight: 		400 !important;
+		margin-top: 		2px !important;
 	}
 
 	#invContainer p {
-		font-size: 			.9em;
-		margin-left:		-18px;
+		font-size: 			.9em !important;
+		margin-left:		-18px !important;
 	}
 
 	header p{
-		font-size: 			1.25em;
+		font-size: 			1.25em !important;
 	}
+
+
 
 }
