@@ -138,8 +138,8 @@ h6{
 
 #aboutMe li {
 	list-style-type: 		circle;
-	list-style-position: inside;
-	line-height: 			150%;
+	margin-left: 1em;
+	margin-bottom: .4em;
 	font-weight: 			400;
 }
 
@@ -149,6 +149,7 @@ h6{
 	font-size: 			1.55em;
 	font-weight: 		500;
 	margin-bottom: 	12px;
+	margin-left: 0em;
 	list-style-type: 	none;
 	list-style-image: none;
 	width: 				100%;
@@ -181,6 +182,14 @@ h6{
 	font-weight: 		300;
 	line-height: 		150%;
 	margin-bottom:		16px;
+}
+
+@media (min-width: 64.0625em) and (max-width: 105em){
+	.slides p, .detail_boxes p, .gallery p, .details p{
+		font-size: 		1.15em;
+	}
+
+
 }
 
 .endSummary p, .endSummary a{
@@ -281,12 +290,15 @@ footer a {
 @media handheld, (max-width: 48em){
 
 	h1{
-		font-size: 			2.65em !important;
+		font-size: 			2.7em !important;
 		padding: 			.6em .6em .4em .6em !important;
 	}
 
 	header h1{
-		font-size: 			2.2em !important;
+		font-size: 			2.8em !important;
+		padding-bottom: 	.1em !important;
+		padding-left: 		0px;
+		padding-right: 	0px;
 	}
 
 	h2{
@@ -299,6 +311,7 @@ footer a {
 		font-weight: 		400 !important;
 		margin-top: 		2px !important;
 	}
+
 
 	h4, h5, h6{
 		font-size: 			.9em !important;
@@ -323,11 +336,5 @@ footer a {
 		font-size: 			.9em !important;
 		margin-left:		-18px !important;
 	}
-
-	header p{
-		font-size: 			1.25em !important;
-	}
-
-
 
 }
