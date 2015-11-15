@@ -60,39 +60,33 @@ header p {
 	font-family: 		'Noto Serif', serif;
 	font-size: 			1.5em;
 	text-align: 		center;
-	color:				#362B3C;
 	text-shadow: 		0px 0px 3px #fff;
 }
 
 @media handheld, (max-width: 48em){
 	header{
-		display:			flex;
-		flex-flow: 		column;
-		align-items: 	center;
-		padding: 		1.25em .9em 2em .9em;
+		display:flex;
+		flex-flow: column;
+		align-items: center;
+		padding: 4.5em 1.5em;
 		background-image: url('../img/bg.png');
 	}
 
 	header h1{
-		font-size: 		1.7em !important;
-		padding-bottom: .4em !important;
-		padding-left: 	.6px;
-		padding-right: .6px;
+		font-size: 2em;
 	}
 
 	header p {
-		font-size: 		1.125em !important;
+		font-size: 			1.25em;
 	}
-
 
 	header > img{
-		width:			50%;
-		height:			50%;
-		border-radius:	50%;
-		border: 			6px solid 	#ffffff;
-		box-shadow: 	0px 0px 8px rgba(54, 43, 59, 0.25);
+		width:50%;
+		height:50%;
+		border-radius: 50%;
+		border: 6px solid 	#ffffff;
+		box-shadow: 0px 0px 8px rgba(54, 43, 59, 0.25);
 	}
-
 
 }
 
@@ -123,16 +117,6 @@ ul#social{
 
 #social li:hover  img{
 	margin-top: -51px;
-}
-
-@media handheld, (max-width:48em){
-	#social{
-		margin-top: 8px;
-		margin-bottom: 8px;
-	}
-	#social li{
-		margin: 18px 6px;
-	}
 }
 
 
@@ -371,7 +355,7 @@ ul#social{
 	align-items: center;
 }
 
-#expContainer img{
+#expContainer svg{
 	min-width: 16px;
 }
 
@@ -464,10 +448,9 @@ ul#social{
 
 #aboutMe > div:last-of-type{
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row;
 	align-items: flex-start;
-	justify-content: flex-start;
-	flex-basis: 100%;
+	justify-content: flex-end;
 	max-width: 1024px;
 	width: 100%;
 		min-height: 100%;
@@ -479,18 +462,16 @@ ul#social{
 	flex-flow: column;
 	align-items: flex-start;
 	text-align: left;
-	flex: 1 0 20%;
-	min-width: 160px;
 	margin: 0px 12px;
 	padding: 12px;
-	min-height: 100%;
+		min-height: 100%;
 
 }
-
 
 #aboutMe ul *{
 	color: #ffffff;
 }
+
 
 
 
@@ -502,9 +483,15 @@ ul#social{
 		align-items: center;
 	}
 
+	#aboutMe > div:last-of-type{
+		flex-flow: row wrap;
+		justify-content: center;
+		flex-basis: 100%;
+	}
 
-
-
+	#aboutMe ul{
+		width: 15%;
+	}
 
 	#aboutMe > div:first-of-type{
 		padding-bottom: 36px;
@@ -518,13 +505,23 @@ ul#social{
 @media handheld, (max-width:48em){
 
 	#aboutMe{
-
-		flex-flow: crolumn;
+		flex-flow: column;
 		padding: 0px 1.5em 4.5em 1.5em;
 		align-items: center;
 	}
 
+	#aboutMe > div:last-of-type{
+		flex-flow: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-basis: 100%;
+		width: 100%;
+	}
 
+	#aboutMe ul{
+		width: 100%;
+		flex: 1 0 100%;
+	}
 
 	#aboutMe > div:first-of-type{
 		padding-bottom: 0em;
@@ -571,7 +568,7 @@ ul#social{
 	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 
-.layer1 img{
+.layer1 img, .layer1 svg {
 	position:absolute;
 	top: 24px;
 	left: 24px;
@@ -639,7 +636,7 @@ ul#social{
 		right: 18px;
 	}
 
-	.layer1 img{
+	.layer1 img, .layer1 svg	{
 		position:absolute;
 		top:18px;
 		left: 18px;
